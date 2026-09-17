@@ -1,4 +1,5 @@
 /* 文字對比修正（WCAG AA）：由 ops/fix-contrast.mjs 依 Lighthouse 報告產生。每條只影響一個元素，滑鼠移上去時維持原本的變色效果 */
+[data-loc="client/src/pages/CourseHarp.tsx:113"]:not(:hover){color:#b48814!important}/*fg:#d4a017 bg:#ffffff need:3*/
 [data-loc="client/src/pages/CourseHarp.tsx:135"]:not(:hover){color:#697281!important}/*fg:#9ca3af bg:#fafaf7 need:4.5*/
 [data-loc="client/src/pages/CourseHarp.tsx:64"]:not(:hover){color:#0a3d62!important}/*fg:#ffffff bg:#d4a017 need:4.5*/
 [data-loc="client/src/pages/CourseHarp.tsx:90"]:not(:hover){color:#0a3d62!important}/*fg:#ffffff bg:#d4a017 need:4.5*/
@@ -10,6 +11,7 @@
 [data-loc="client/src/pages/HarpKnowledge.tsx:274"]:not(:hover){color:#6b7484!important}/*fg:#9ca3af bg:#ffffff need:4.5*/
 [data-loc="client/src/pages/HarpKnowledge.tsx:390"]:not(:hover){color:#0a3d62!important}/*fg:#ffffff bg:#d4a017 need:4.5*/
 [data-loc="client/src/pages/Home.tsx:1060"]:not(:hover){color:#8f6c10!important}/*fg:#d4a017 bg:#ffffff need:4.5*/
+[data-loc="client/src/pages/Home.tsx:135"]:not(:hover){color:#0a3d62!important}/*fg:#ffffff bg:#d4a017 need:4.5*/
 [data-loc="client/src/pages/Home.tsx:1845"]:not(:hover){color:#94aaba!important}/*fg:#859eb0 bg:#0a3d62 need:4.5*/
 [data-loc="client/src/pages/Home.tsx:1854"]:not(:hover){color:#94aaba!important}/*fg:#859eb0 bg:#0a3d62 need:4.5*/
 [data-loc="client/src/pages/Home.tsx:1855"]:not(:hover){color:#94aaba!important}/*fg:#859eb0 bg:#0a3d62 need:4.5*/
@@ -24,13 +26,15 @@
 [data-loc="client/src/pages/HomeEN.tsx:1012"]:not(:hover){color:#94abbb!important}/*fg:#6c8ba1 bg:#0a3d62 need:4.5*/
 [data-loc="client/src/pages/HomeEN.tsx:1014"]:not(:hover){color:#94abbb!important}/*fg:#6c8ba1 bg:#0a3d62 need:4.5*/
 [data-loc="client/src/pages/HomeEN.tsx:169"]:not(:hover){color:#0a3d62!important}/*fg:#ffffff bg:#d4a017 need:4.5*/
+[data-loc="client/src/pages/HomeEN.tsx:83"]:not(:hover){color:#0a3d62!important}/*fg:#ffffff bg:#d4a017 need:4.5*/
 [data-loc="client/src/pages/HomeEN.tsx:981"]:not(:hover){color:#94aaba!important}/*fg:#859eb0 bg:#0a3d62 need:4.5*/
 [data-loc="client/src/pages/HomeEN.tsx:990"]:not(:hover){color:#94aaba!important}/*fg:#859eb0 bg:#0a3d62 need:4.5*/
 [data-loc="client/src/pages/HomeEN.tsx:991"]:not(:hover){color:#94aaba!important}/*fg:#859eb0 bg:#0a3d62 need:4.5*/
 [data-loc="client/src/pages/HomeEN.tsx:992"]:not(:hover){color:#94aaba!important}/*fg:#859eb0 bg:#0a3d62 need:4.5*/
+[data-loc="client/src/pages/KnowledgeArticle.tsx:430"]:not(:hover){color:#666d7a!important}/*fg:#6b7280 bg:#f8f4ee need:4.5*/
+[data-loc="client/src/pages/KnowledgeArticle.tsx:435"]:not(:hover){color:#0a3d62!important}/*fg:#ffffff bg:#06c755 need:4.5*/
 [data-loc="client/src/pages/KnowledgeArticle.tsx:448"]:not(:hover){color:#666d7a!important}/*fg:#6b7280 bg:#f8f4ee need:4.5*/
 [data-loc="client/src/pages/KnowledgeArticle.tsx:450"]:not(:hover){color:#666d7a!important}/*fg:#6b7280 bg:#f8f4ee need:4.5*/
-[data-loc="client/src/pages/KnowledgeArticle.tsx:459"]:not(:hover){color:#191919!important}/*fg:#ffffff bg:#0891b2,#d4a017 need:4.5*/
 [data-loc="client/src/pages/KnowledgeArticle.tsx:467"]:not(:hover){color:#666d7a!important}/*fg:#6b7280 bg:#f8f4ee need:4.5*/
 [data-loc="client/src/pages/KnowledgeArticle.tsx:471"]:not(:hover){color:#646d7c!important}/*fg:#9ca3af bg:#f8f4ee need:4.5*/
 [data-loc="client/src/pages/KnowledgeArticle.tsx:474"]:not(:hover){color:#646d7c!important}/*fg:#9ca3af bg:#f8f4ee need:4.5*/
