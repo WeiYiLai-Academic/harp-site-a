@@ -5,7 +5,7 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://taiwanharp.org/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://taiwanharp.org/en/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://taiwanharp.org/" />
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <image:image>
       <image:loc>https://taiwanharp.org/img/DSCF6651_0fbc0fad.JPG</image:loc>
     </image:image>
@@ -15,15 +15,31 @@
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://taiwanharp.org/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://taiwanharp.org/en/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://taiwanharp.org/" />
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <image:image>
       <image:loc>https://taiwanharp.org/img/DSCF6651_0fbc0fad.JPG</image:loc>
     </image:image>
   </url>
   <url>
+    <loc>https://taiwanharp.org/harps/</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://taiwanharp.org/harps/" />
+    <lastmod>2026-09-18</lastmod>
+    <image:image>
+      <image:loc>https://taiwanharp.org/img/harps/hope-harp-lineup-og.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://taiwanharp.org/events/</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://taiwanharp.org/events/" />
+    <lastmod>2026-09-18</lastmod>
+    <image:image>
+      <image:loc>https://taiwanharp.org/img/CC4CB7C7-5E9B-4A7F-9551-002C170039BE_0620477a.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
     <loc>https://taiwanharp.org/courses/harp/</loc>
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://taiwanharp.org/courses/harp/" />
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <image:image>
       <image:loc>https://taiwanharp.org/img/DSCF6651_0fbc0fad.JPG</image:loc>
     </image:image>
@@ -31,7 +47,7 @@
   <url>
     <loc>https://taiwanharp.org/courses/senior/</loc>
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://taiwanharp.org/courses/senior/" />
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <image:image>
       <image:loc>https://taiwanharp.org/img/DSCF6651_0fbc0fad.JPG</image:loc>
     </image:image>
@@ -39,7 +55,7 @@
   <url>
     <loc>https://taiwanharp.org/courses/teacher/</loc>
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://taiwanharp.org/courses/teacher/" />
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <image:image>
       <image:loc>https://taiwanharp.org/img/DSCF6651_0fbc0fad.JPG</image:loc>
     </image:image>
@@ -47,7 +63,7 @@
   <url>
     <loc>https://taiwanharp.org/knowledge/</loc>
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://taiwanharp.org/knowledge/" />
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <image:image>
       <image:loc>https://taiwanharp.org/img/DSCF6651_0fbc0fad.JPG</image:loc>
     </image:image>
@@ -55,7 +71,7 @@
   <url>
     <loc>https://taiwanharp.org/knowledge/beginner-guide/</loc>
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://taiwanharp.org/knowledge/beginner-guide/" />
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <image:image>
       <image:loc>https://taiwanharp.org/img/DSCF6651_0fbc0fad.JPG</image:loc>
     </image:image>
@@ -63,15 +79,31 @@
   <url>
     <loc>https://taiwanharp.org/knowledge/lever-harp/</loc>
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://taiwanharp.org/knowledge/lever-harp/" />
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <image:image>
       <image:loc>https://taiwanharp.org/img/DSCF6651_0fbc0fad.JPG</image:loc>
     </image:image>
   </url>
   <url>
+    <loc>https://taiwanharp.org/knowledge/harp-strings-guide/</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://taiwanharp.org/knowledge/harp-strings-guide/" />
+    <lastmod>2026-09-18</lastmod>
+    <image:image>
+      <image:loc>https://taiwanharp.org/img/harps/hope-harp-lineup-og.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://taiwanharp.org/knowledge/kids-8-string-harp/</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://taiwanharp.org/knowledge/kids-8-string-harp/" />
+    <lastmod>2026-09-18</lastmod>
+    <image:image>
+      <image:loc>https://taiwanharp.org/media/mary-lamb-8-string-harp-poster.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
     <loc>https://taiwanharp.org/knowledge/harp-price/</loc>
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://taiwanharp.org/knowledge/harp-price/" />
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <image:image>
       <image:loc>https://taiwanharp.org/img/DSCF6651_0fbc0fad.JPG</image:loc>
     </image:image>
@@ -79,7 +111,7 @@
   <url>
     <loc>https://taiwanharp.org/knowledge/harp-vs-piano/</loc>
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://taiwanharp.org/knowledge/harp-vs-piano/" />
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <image:image>
       <image:loc>https://taiwanharp.org/img/DSCF6651_0fbc0fad.JPG</image:loc>
     </image:image>
@@ -87,15 +119,23 @@
   <url>
     <loc>https://taiwanharp.org/knowledge/slow-practice/</loc>
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://taiwanharp.org/knowledge/slow-practice/" />
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <image:image>
       <image:loc>https://taiwanharp.org/img/DSCF6651_0fbc0fad.JPG</image:loc>
     </image:image>
   </url>
   <url>
+    <loc>https://taiwanharp.org/knowledge/harp-care-tuning/</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://taiwanharp.org/knowledge/harp-care-tuning/" />
+    <lastmod>2026-09-18</lastmod>
+    <image:image>
+      <image:loc>https://taiwanharp.org/img/harps/hope-harp-lineup-og.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
     <loc>https://taiwanharp.org/knowledge/senior-music/</loc>
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://taiwanharp.org/knowledge/senior-music/" />
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <image:image>
       <image:loc>https://taiwanharp.org/img/DSCF6651_0fbc0fad.JPG</image:loc>
     </image:image>
@@ -103,7 +143,7 @@
   <url>
     <loc>https://taiwanharp.org/knowledge/abrsm-harp/</loc>
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://taiwanharp.org/knowledge/abrsm-harp/" />
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <image:image>
       <image:loc>https://taiwanharp.org/img/DSCF6651_0fbc0fad.JPG</image:loc>
     </image:image>
@@ -111,7 +151,7 @@
   <url>
     <loc>https://taiwanharp.org/performances/</loc>
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://taiwanharp.org/performances/" />
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <image:image>
       <image:loc>https://taiwanharp.org/img/DSCF6651_0fbc0fad.JPG</image:loc>
     </image:image>
@@ -119,7 +159,7 @@
   <url>
     <loc>https://taiwanharp.org/concert/</loc>
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://taiwanharp.org/concert/" />
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <image:image>
       <image:loc>https://taiwanharp.org/img/poster_final_dceb3be1.jpg</image:loc>
     </image:image>
@@ -127,7 +167,7 @@
   <url>
     <loc>https://taiwanharp.org/privacy/</loc>
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://taiwanharp.org/privacy/" />
-    <lastmod>2026-09-17</lastmod>
+    <lastmod>2026-09-18</lastmod>
     <image:image>
       <image:loc>https://taiwanharp.org/img/DSCF6651_0fbc0fad.JPG</image:loc>
     </image:image>

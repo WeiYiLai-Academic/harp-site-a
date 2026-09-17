@@ -1,4 +1,4 @@
-# taiwanharp.org — 賴薇伊 Wei-Yi Lai｜Hope豎琴
+# taiwanharp.org — 賴薇伊 Wei-Yi Lai｜Hope Harp希望豎琴
 # 給 AI 的網站摘要：https://taiwanharp.org/llms.txt（詳細版 https://taiwanharp.org/llms-full.txt）
 
 User-agent: *
