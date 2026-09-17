@@ -34,6 +34,7 @@
 - [天使啟航師資班](https://taiwanharp.org/courses/teacher/)：豎琴教學、合奏帶領與課程設計訓練
 - [豎琴知識中心](https://taiwanharp.org/knowledge/)：選琴、學習與音樂療癒指南，以及豎琴常見問題
   - [零基礎學豎琴：從選琴到第一堂課的完整指南](https://taiwanharp.org/knowledge/beginner-guide/)
+  - [撥鍵豎琴是什麼？構造、撥鍵用法與踏板豎琴的差別](https://taiwanharp.org/knowledge/lever-harp/)
   - [豎琴多少錢？2025 年台灣豎琴價格完整指南](https://taiwanharp.org/knowledge/harp-price/)
   - [豎琴 vs 鋼琴：哪個更適合我的孩子學？](https://taiwanharp.org/knowledge/harp-vs-piano/)
   - [豎琴慢練的秘密：為什麼慢練才是進步最快的方法？](https://taiwanharp.org/knowledge/slow-practice/)
@@ -51,3 +52,7 @@
 - Threads：https://www.threads.com/@hope.harp_music
 - 蝦皮賣場：https://tw.shp.ee/dKqsjYGR
 - ORCID：https://orcid.org/0009-0008-2281-5178
+
+## 詳細版
+
+- [llms-full.txt](https://taiwanharp.org/llms-full.txt)：每一頁的大綱與常見問題快速指引
