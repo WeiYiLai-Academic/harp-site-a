@@ -1,4 +1,4 @@
-import{r as i,j as e,L as d}from"./vendor-react-DjW-w3QY.js";import{s as u,r as b}from"./seo-B8q6kMxV.js";import{k as p,q as y,B as H,r as N,a as m,l as h,m as w,e as j}from"./vendor-icons-jPBZ-bcP.js";import{m as s,A as x}from"./vendor-motion-CdWaz_AV.js";import"./vendor-misc-BK5zczXn.js";const r={hidden:{opacity:0,y:30},visible:t=>({opacity:1,y:0,transition:{delay:t*.1,duration:.6,ease:"easeOut"}})},g={hidden:{},visible:{transition:{staggerChildren:.1}}},f={hidden:{opacity:0,y:20},visible:{opacity:1,y:0,transition:{duration:.5}}},v=[{id:"beginner-guide",tag:"入門指南",tagColor:"#0A3D62",readTime:"5 分鐘",title:"零基礎學豎琴：從選琴到第一堂課的完整指南",summary:"許多人對豎琴充滿嚮往，卻不知從何開始。本文帶您了解豎琴的種類、如何選擇適合自己的豎琴、第一堂課的準備事項，以及台中哪裡可以學豎琴。",content:`
+import{r as i,j as e,L as d}from"./vendor-react-DjW-w3QY.js";import{s as u,r as b}from"./seo-B8q6kMxV.js";import{k as p,q as y,B as H,r as N,a as m,l as h,m as w,e as j}from"./vendor-icons-jPBZ-bcP.js";import{m as s,A as x}from"./vendor-motion-CdWaz_AV.js";import"./vendor-misc-BK5zczXn.js";const r={hidden:{opacity:0,y:30},visible:t=>({opacity:1,y:0,transition:{delay:t*.1,duration:.6,ease:"easeOut"}})},g={hidden:{},visible:{transition:{staggerChildren:.1}}},f={hidden:{opacity:0,y:20},visible:{opacity:1,y:0,transition:{duration:.5}}},v=[{id:"beginner-guide",tag:"入門指南",tagColor:"#0A3D62",readTime:"5 分鐘",title:"豎琴初學者指南：零基礎怎麼開始、選哪一台、台中哪裡學",summary:"零基礎想學豎琴，先搞懂三件事：豎琴分成撥鍵豎琴與踏板豎琴、初學最常從 17 弦開始、第一堂課只需要一台琴與剪短的指甲。本文說明怎麼選第一台、第一堂課會做什麼，以及台中哪裡可以上課。",content:`
 ## 豎琴有哪些種類？
 
 豎琴主要分為兩大類：**無踏板豎琴（Celtic Harp / Lever Harp）**與**踏板豎琴（Pedal Harp）**。
@@ -25,6 +25,83 @@ Hope Harp希望豎琴提供 17 弦到 40 弦的完整產品線，並提供短期
 ## 台中哪裡可以學豎琴？
 
 賴薇伊老師在台中提供豎琴個別課程，每堂 50 分鐘，一期 8 堂課，學費 NT$1,000–1,500 / 堂。30 年教學經驗，從 5 歲兒童到樂齡族群皆可教學。歡迎透過 LINE 預約免費諮詢。
+    `},{id:"harp-easy-to-learn",tag:"入門指南",tagColor:"#0A3D62",readTime:"6 分鐘",title:"豎琴好學嗎？怎麼彈、會不會痛、幾歲可以開始",summary:"豎琴的弦已經調好音，手一碰就有聲音，第一堂課通常就能彈出旋律；真正花時間的是雙手分工與放弦。本文說明實際的撥弦動作、指甲要不要剪、需不需要先會鋼琴、小朋友幾歲可以開始、每天該練多久，以及豎琴的英文怎麼說。",content:`
+## 先看結論：豎琴比大多數人想的好上手
+
+豎琴最特別的地方是**手一碰弦就有好聽的聲音**。弦已經調好音，不需要像小提琴那樣自己找音準，也不必像管樂先練吹氣，所以第一堂課就能彈出一段完整的旋律，這也是很多大人上完第一堂就繼續學下去的原因。
+
+真正需要時間的不是「發出聲音」，而是**雙手分工**（左手低音、右手旋律）與**放弦**（讓不該響的弦停下來）。這兩件事沒有捷徑，靠每天一點點累積。
+
+## 豎琴怎麼彈？實際的動作是這樣
+
+- **坐姿**：坐在椅子前緣、背打直，琴靠在右肩前方（小豎琴可以放在膝上或桌上），雙手自然抬起來就在弦上。
+- **用哪幾根手指**：大拇指、食指、中指、無名指四根，**小指通常不使用**（太短、力量不夠）。
+- **怎麼撥**：用指尖的肉往手掌內側撥，撥完手指自然收進掌心，不是用指甲刮。
+- **放弦（damping）**：手指回到弦上輕輕碰住，讓聲音停下來。豎琴的餘音很長，不處理會全部疊在一起。
+- **怎麼看弦**：紅色的弦是 C、黑色（或藍色）的弦是 F，靠這兩個顏色定位，不用一條一條數。
+- **左右手分工**：右手彈旋律、左手彈低音與和弦。一開始會覺得兩手打架，這是每個人都會經過的階段。
+
+## 剛開始會痛嗎？指甲要剪嗎？
+
+**指甲要剪短。** 撥弦是用指尖的肉，指甲太長會刮到弦，聲音會變得又薄又雜。
+
+剛開始練習時，指尖常會有點敏感或發紅，休息一下就會緩解；持續練一段時間之後，多數人就不太感覺到了。如果出現疼痛、麻木或紅腫不退，先停下來休息並告訴老師，不要硬練——那通常是撥弦的方式或手型需要調整。
+
+## 需要先會鋼琴、會看譜嗎？
+
+都不需要。零基礎可以直接開始，老師會從認識五線譜、坐姿與手型教起。
+
+已經學過鋼琴的人會有一些優勢（看譜快、對音高熟悉），但豎琴的手型與觸弦方式不同，要重新建立習慣。兩種樂器的差別整理在[豎琴 vs 鋼琴](/knowledge/harp-vs-piano/)。
+
+## 小朋友幾歲可以開始？
+
+豎琴個別課程的適合對象是**5 歲以上**到樂齡族群。更小的孩子可以先從 8 弦小豎琴的親子音樂遊戲開始，抱得動、放在桌上就能彈，做法寫在[8 弦小豎琴適合幾歲](/knowledge/kids-8-string-harp/)。
+
+判斷孩子準備好了沒有，看三件事：坐得住 15 分鐘以上、手指能分開動、聽得懂「換一根手指」這類指令。
+
+## 一週要練多久？
+
+比「一次練很久」更有效的是**每天短時間**。初學階段每天 10～20 分鐘、一週五天，進度會比週末補練兩小時明顯。原因是手指的動作記憶需要重複次數，不是總時數。
+
+練習方法上，慢練是最省時間的做法——慢到不會彈錯，再一格一格加快，完整說明在[豎琴慢練的秘密](/knowledge/slow-practice/)。
+
+## 豎琴的英文怎麼說
+
+- **harp**：豎琴的統稱。
+- **lever harp**：撥鍵豎琴，也就是小豎琴；歐美也常叫 **Celtic harp**（凱爾特豎琴）或 **Irish harp**（愛爾蘭豎琴）。
+- **pedal harp**：踏板豎琴，音樂廳用的大豎琴，差別寫在[踏板豎琴價格與 40 弦、47 弦差別](/knowledge/pedal-harp/)。
+- **harpist**：豎琴演奏者。
+- 買弦、找樂譜時常看到的字：**string**（弦）、**tuning key / tuning wrench**（調音扳手）、**soundboard**（音板）。
+
+## 要準備什麼才能開始
+
+一台琴（可以先租）、一個調音器（手機 App 就可以）、指甲剪。入門琴最常見的選擇是 17 弦，Hope Harp 17S 旅行豎琴 NT$5,980；不想先買可以先租，17 弦每月 NT$500，條件寫在[豎琴租借](/knowledge/harp-rental/)。學費與第一年花費整理在[學豎琴要多少錢](/knowledge/harp-lesson-fee/)。
+
+## 常見問題
+
+**豎琴好學嗎？**
+
+入門比多數樂器容易，因為弦已調好音、手一碰就有聲音，第一堂課通常就能彈出簡單旋律。之後比較花時間的是雙手分工與放弦，需要每天短時間累積。
+
+**豎琴怎麼彈？**
+
+用大拇指、食指、中指、無名指四根手指，以指尖的肉往手掌內側撥弦，撥完手指收進掌心；小指通常不用。彈完要把手指放回弦上止音，避免餘音疊在一起。
+
+**完全沒有音樂基礎可以學嗎？**
+
+可以。零基礎從認識五線譜、坐姿與手型開始教，不需要先學鋼琴。
+
+**手指會痛嗎？要留指甲嗎？**
+
+指甲要剪短，用指尖的肉撥弦。剛開始指尖可能有點敏感，休息會緩解；若疼痛或紅腫不退，請停下來並告訴老師調整手型。
+
+**每天要練多久？**
+
+初學階段建議每天 10～20 分鐘、一週五天，比週末一次練很久有效。
+
+**小豎琴的英文是什麼？**
+
+lever harp，也常被稱作 Celtic harp 或 Irish harp；音樂廳用的大豎琴是 pedal harp。
     `},{id:"lever-harp",tag:"認識豎琴",tagColor:"#8e5a2b",readTime:"4 分鐘",title:"撥鍵豎琴是什麼？構造、撥鍵用法與踏板豎琴的差別",summary:"撥鍵豎琴（又稱無踏板豎琴、小豎琴、凱爾特豎琴）是很多人學豎琴的第一台琴。本文說明它由哪些部分組成、撥鍵怎麼升高半音、琴弦為什麼有紅有黑，以及和音樂廳踏板豎琴的差別。",content:`
 ## 撥鍵豎琴是什麼？
 
@@ -152,6 +229,85 @@ Hope Harp 27S 高 82 公分、重 3.8 公斤，楓木本體搭配雲杉單板音
 **弦數越多越好嗎？**
 
 不一定。弦數越多，琴越大、越重、價格越高，搬運和調音的時間也越多。適合自己現在的程度與使用場合，才是最好的選擇。
+    `},{id:"pedal-harp",tag:"認識豎琴",tagColor:"#8e5a2b",readTime:"6 分鐘",title:"踏板豎琴價格與 40 弦、47 弦差別：什麼時候真的需要大豎琴",summary:"踏板豎琴用七個踏板換半音，市面行情 NT$300,000 起；撥鍵豎琴用手扳撥鍵，幾千到十幾萬就有。本文說明兩者差別、40 弦與 47 弦怎麼選、什麼情況才需要換成踏板豎琴，以及先租一台（NT$10,000 / 2–7 天）的做法。",content:`
+## 先看結論：踏板豎琴和撥鍵豎琴差在哪
+
+踏板豎琴（pedal harp）是音樂廳裡那種一人高的大豎琴，**用腳踩七個踏板換半音**，演奏中可以自由轉調；撥鍵豎琴（lever harp）是用手把弦上的撥鍵扳起來升半音，彈到一半要換調就得先停下來。
+
+價差也在另一個量級：撥鍵小豎琴幾千到幾萬元，踏板豎琴是數十萬起跳。學豎琴的人九成九是從撥鍵豎琴開始，等到曲目真的需要頻繁轉調、或要進樂團與音樂廳，才會考慮踏板豎琴。
+
+| | 撥鍵豎琴（lever harp） | 踏板豎琴（pedal harp） |
+|---|---|---|
+| 換半音的方式 | 手扳弦上的撥鍵，只能升半音 | 腳踩七個踏板，演奏中可隨時變化 |
+| 常見弦數 | 17、27、34、36 弦 | 40 弦、46～47 弦 |
+| 市面價格範圍 | NT$5,980 起（17 弦）～NT$150,000（34–40 弦） | NT$300,000～1,000,000 以上 |
+| 重量與搬運 | 1.4～11.8 公斤，一個人抱得動 | 數十公斤，需要專業搬運 |
+| 適合 | 入門到進階、教學、小型演出 | 專業演奏、樂團、音樂廳 |
+
+撥鍵怎麼運作、為什麼只能升不能降，寫在[撥鍵豎琴是什麼](/knowledge/lever-harp/)；各價格帶的完整行情在[豎琴多少錢](/knowledge/harp-price/)。
+
+## 40 弦、47 弦是什麼意思
+
+豎琴的型號常直接用弦數稱呼，弦數決定音域：
+
+- **47 弦**是現代踏板豎琴的標準規格，音域最寬，樂團與獨奏曲目幾乎都寫給它。
+- **40 弦**是尺寸較小的踏板豎琴，比 47 弦輕、佔空間少，價格也低一些，但最低音少了幾個音，有些曲子會需要改寫低音。
+- **34～36 弦**通常是大型的撥鍵豎琴（例如 Hope Harp 36S 大型撥鍵豎琴，36 弦、音域 C2–C7），**不是**踏板豎琴：它沒有踏板，仍然用撥鍵換半音。
+
+所以看到「36 弦豎琴」不要直接當成踏板琴。弦數與音域的對照整理在[幾弦的豎琴怎麼選](/knowledge/harp-strings-guide/)。
+
+## 什麼時候真的需要踏板豎琴
+
+以下情況才需要考慮：
+
+- **曲目轉調頻繁**：浪漫派以後的獨奏曲、協奏曲，一首之內要換好幾個調。
+- **進樂團或考音樂科系**：編制與曲目要求踏板豎琴。
+- **檢定的高級別曲目**：有些級別的曲目寫給踏板豎琴。要考哪一級、能不能用撥鍵豎琴應考，請先與老師和考試單位確認，級別說明在[ABRSM 英國皇家音樂學院豎琴考級完整指南](/knowledge/abrsm-harp/)。
+
+如果你的目標是興趣、流行歌、陪孩子學、或樂齡課程，撥鍵豎琴完全夠用，而且好搬、好保養、好放。
+
+## 先租、先試彈，不要直接買
+
+踏板豎琴不是可以「先買了再說」的樂器。賴薇伊老師在台中提供踏板豎琴短期租借與示範：
+
+- **租借**：NT$10,000 / 2–7 天，押金 NT$50,000，運費依地區另計，**需提前 3 天預約**。適合演出、婚禮與活動。
+- **試彈與示範**：老師的演出與教學本來就包含 Aoyama 踏板豎琴示範，想聽實際音色、看踏板怎麼踩，可以預約時直接說。
+
+完整租借條件整理在[豎琴租借](/knowledge/harp-rental/)。
+
+## 二手踏板豎琴（40 弦、47 弦）要小心什麼
+
+二手踏板豎琴的價差很吸引人，但結構比撥鍵豎琴複雜得多：**七個踏板要逐一踩到底再放回，確認咬合與回彈**，連桿藏在琴柱裡，維修得找得到技師；另外要請賣家提供最近的保養與換弦紀錄，並把搬運、整套換弦與調整的費用一起算進總價。完整的檢查清單在[二手豎琴值得買嗎](/knowledge/harp-secondhand/)。
+
+## 維修、調音與保養
+
+踏板豎琴的調音範圍大、弦多，調一次音比小豎琴久；踏板與連桿則需要定期檢查。賴薇伊老師提供 Hope Harp希望豎琴與 Aoyama 豎琴的維修諮詢，遇到踏板咬合、雜音或換弦問題，可以先拍照或錄影傳給她看。日常保養與調音的做法寫在[豎琴保養與調音](/knowledge/harp-care-tuning/)。
+
+## 常見問題
+
+**踏板豎琴多少錢？**
+
+市面行情大約 NT$300,000 到 1,000,000 以上，依品牌、弦數（40 弦或 47 弦）與新舊差異很大。這是市場行情，不是本站售價；本站販售的是 Hope Harp希望豎琴的撥鍵豎琴。
+
+**40 弦和 47 弦差在哪？**
+
+47 弦是現代踏板豎琴的標準規格、音域最寬；40 弦較小較輕、價格低一些，但最低音較少，部分曲目需要調整。
+
+**可以先租踏板豎琴嗎？**
+
+可以，NT$10,000 / 2–7 天，押金 NT$50,000，運費另計，需提前 3 天預約，適合演出與活動。
+
+**撥鍵豎琴可以考檢定嗎？**
+
+要看級別與指定曲目。請先與老師確認你要考的級別，並以考試單位當年度公告為準。
+
+**36 弦的豎琴是踏板豎琴嗎？**
+
+不是。36 弦通常是大型撥鍵豎琴，用撥鍵換半音、沒有踏板；Hope Harp 36S 大型撥鍵豎琴就是這一類。
+
+**初學者應該直接買踏板豎琴嗎？**
+
+不建議。撥鍵豎琴的手感與基本功是一樣的，先用撥鍵豎琴把基礎練起來，確定要走專業路線再換，才不會一開始就投入數十萬元。
     `},{id:"kids-8-string-harp",tag:"兒童入門",tagColor:"#b4235a",readTime:"5 分鐘",title:"8 弦小豎琴適合幾歲？兒童第一台豎琴怎麼開始",summary:"8 弦小豎琴只有一個八度、0.6 公斤，適合幼兒認識音階。本文說明幾歲可以開始、第一首曲子怎麼選、樂譜和實際音高的差別、家長怎麼陪練，以及什麼時候換 17 弦。",content:`
 ## 8 弦小豎琴是什麼樣的琴？
 
@@ -193,7 +349,7 @@ Hope Harp 27S 高 82 公分、重 3.8 公斤，楓木本體搭配雲杉單板音
 ## 在台中想帶孩子試試看？
 
 賴薇伊老師在台中開設豎琴個別課程，兒童可以從認識豎琴、撥弦和唱名開始；想先看看琴、讓孩子摸摸看，可以透過 LINE（pianoaaa）預約試彈。
-    `},{id:"harp-price",tag:"選購指南",tagColor:"#926e10",readTime:"4 分鐘",title:"豎琴多少錢？2026–2027 年台灣豎琴價格完整指南",summary:"豎琴的價格從數千元到數十萬元不等，讓許多人望而卻步。本文詳細說明不同類型豎琴的價格範圍，幫助您找到最適合預算的選擇。",content:`
+    `},{id:"harp-price",tag:"選購指南",tagColor:"#926e10",readTime:"4 分鐘",title:"豎琴多少錢？2026–2027 年台灣豎琴價格完整指南",summary:"8 弦迷你豎琴 NT$3,980、17 弦入門 NT$5,980 起、27 弦 NT$42,800，踏板豎琴則是數十萬元起跳。本文整理各類型豎琴的價格範圍、Hope Harp希望豎琴 2026–2027 年公布價格，以及先租再買的算法。",content:`
 ## 豎琴價格一覽
 
 豎琴的價格因弦數、材質、品牌而有很大差異：
@@ -226,7 +382,225 @@ Hope Harp希望豎琴由賴薇伊老師親自研發設計，擁有台灣專利�
 2. **調音**：確認豎琴是否附有調音扳手，以及賣家是否提供調音服務
 3. **維修**：了解品牌的維修服務，Aoyama 豎琴維修技師賴薇伊老師可提供專業維修
 4. **配件**：確認是否附有琴套、調音器等基本配件
-    `},{id:"harp-vs-piano",tag:"學習比較",tagColor:"#2d7a4f",readTime:"4 分鐘",title:"豎琴 vs 鋼琴：哪個更適合我的孩子學？",summary:"豎琴與鋼琴都是優雅的樂器，但各有特色。本文從學習難度、費用、適合年齡、未來發展等面向，幫助家長做出最適合的選擇。",content:`
+    `},{id:"harp-secondhand",tag:"選購指南",tagColor:"#926e10",readTime:"7 分鐘",title:"二手豎琴值得買嗎？現場要檢查的 8 個地方與價錢怎麼算",summary:"二手豎琴可以買，但音板有沒有裂、撥鍵會不會卡、音準撐不撐得住，一定要當場確認。本文整理現場檢查的 8 個地方、二手踏板豎琴（40 弦、47 弦）要多看的三件事，以及用新品價格反推二手價的算法。",content:`
+## 先看結論：二手豎琴可以買，但有三件事一定要當場確認
+
+二手豎琴可以買，前提是你能親自到現場，確認三件事：**音板（面板）有沒有裂、每個撥鍵扳起來會不會卡、把音調上去之後撐不撐得住**。這三項只要有一項不過，維修費就可能比省下來的價差還高。
+
+如果賣家不讓你試彈、不讓你調音，或是琴已經放了很久沒調過音，寧可不要。豎琴是靠張力撐起來的樂器，狀況好不好，手一碰就知道。
+
+## 先算一次：新琴其實沒有你想的貴
+
+很多人一開始就找二手，是因為「豎琴應該很貴」。但小豎琴的新品價格其實不高，先看過新品行情再回頭看二手價，比較不會買貴：
+
+| 新品（2026–2027 年公布價格） | 價格 |
+|---|---|
+| Hope Harp 8S 迷你豎琴（8 弦） | NT$3,980 |
+| Hope Harp 17S 旅行豎琴（17 弦・無撥鍵） | NT$5,980 |
+| Hope Harp 17L 撥鍵小豎琴（17 弦・有撥鍵） | NT$14,800 |
+| Hope Harp 27S 撥鍵豎琴（27 弦・有撥鍵） | NT$42,800 |
+
+完整規格與其他品牌的行情，整理在[豎琴多少錢](/knowledge/harp-price/)與[Hope Harp希望豎琴型號與型錄](/harps/)。
+
+會建議先算這一筆，是因為**小豎琴的二手價常常只比新品便宜一、兩千元**，而新琴有保固、可以請老師幫你調第一次音；二手琴如果要換一整套弦、或撥鍵需要調整，價差很快就被吃掉。弦數越大、越貴的琴（27 弦以上、踏板豎琴），二手才真的省得到錢，但要檢查的東西也更多。
+
+## 到現場要檢查的 8 個地方
+
+帶一支手電筒和手機上的調音 App 就夠了。請賣家不要事先調好音——**你要看的就是「它撐不撐得住」**。
+
+1. **音板（面板）**：整面用手電筒斜照，看有沒有裂縫、鼓起或凹陷。音板是發聲的關鍵，裂了就是大修。
+2. **琴頸與琴柱**：從正面看有沒有歪斜，接合處有沒有縫。長期張力會把構造慢慢拉變形。
+3. **弦釘與調音釘**：轉動時是不是穩定、會不會鬆。調音釘鬆掉的琴會一直走音。
+4. **撥鍵（如果有）**：**每一個都扳上扳下**，聽有沒有雜音、看會不會卡住，扳起來的音準不準。撥鍵是最常出問題、也最容易被忽略的部分，怎麼運作可以看[撥鍵豎琴是什麼](/knowledge/lever-harp/)。
+5. **琴弦**：有沒有變色、起毛、鬆掉、綁結鬆脫。整套換弦是一筆固定成本，先問賣家上次換弦是什麼時候。
+6. **琴身接合處與底座**：搖一搖聽有沒有異音；可拆式底座要裝回去試一次。
+7. **音準撐得住嗎**：把幾條弦調到標準音，彈幾分鐘、放十幾分鐘再量一次。新換的弦會走音是正常的，**整台一直往下掉就要小心**。
+8. **整體音色**：低音有沒有厚度、高音會不會發不出聲。同一個型號多試幾台，差別很明顯。
+
+## 二手踏板豎琴（40 弦、47 弦）要多看三件事
+
+踏板豎琴的結構比撥鍵豎琴複雜，二手風險也更高：
+
+- **七個踏板逐一踩**：每一個都要踩到底、放回來，聽有沒有咬合不順、彈回不完全，看音有沒有真的改變。踏板連桿藏在琴柱裡，修起來要找得到技師。
+- **保養紀錄**：請賣家提供最近一次調整或換弦的時間與內容。沒有紀錄的琴，你買到的是未知數。
+- **搬運與後續成本**：踏板豎琴很重，運送、換一整套弦、調整連桿都是額外支出，這幾筆要先問清楚再談價。
+
+如果你要的是「偶爾演出用」，先租一台可能比買二手更划算：老師有踏板豎琴短期租借（NT$10,000 / 2–7 天，押金 NT$50,000、運費另計），詳細條件寫在[豎琴租借](/knowledge/harp-rental/)。
+
+## 這些情況，直接買新的比較好
+
+- **小朋友第一台**：8 弦與 17 弦新品價差小、有保固，狀況單純比較安心，可以看[8 弦小豎琴適合幾歲](/knowledge/kids-8-string-harp/)。
+- **你沒辦法親自去看琴**：只看照片、用寄送方式買二手豎琴，風險很高。
+- **你需要售後調音與維修**：新琴通常連帶有人幫你顧；二手琴要自己找技師。
+- **賣家說「還沒調過音、但應該沒問題」**：這句話代表沒有人確認過現在的狀況。
+
+## 想賣掉手上的琴，或想找人幫你看一台二手琴
+
+賴薇伊老師在台中提供試彈，也提供 Hope Harp希望豎琴與 Aoyama 豎琴的維修諮詢。如果你正在考慮一台二手琴、或手上有琴想處理，可以直接用 LINE 或電話詢問，把型號、弦數、年份與照片一起附上，會比較好判斷。
+
+## 常見問題
+
+**二手豎琴大概多少錢？**
+
+沒有公定行情，價格要看弦數、有沒有撥鍵、實際狀況與年份。最實際的算法是**拿新品價格當基準**（17 弦 NT$5,980 起、27 弦 NT$42,800），再把換一整套弦、調音、可能的撥鍵調整費用加進去，和二手要價比一比。小豎琴常常差不到多少，大琴才真的省得到。
+
+**二手踏板豎琴（40 弦、47 弦）要注意什麼？**
+
+七個踏板要逐一踩過、確認咬合與回彈，並請賣家提供最近的保養與換弦紀錄；另外要把搬運費、整套換弦與連桿調整的費用算進總價。找不到能維修的技師時，不建議出手。
+
+**你們收購二手豎琴嗎？**
+
+老師目前提供的是試彈與維修諮詢，收購或估價請直接來訊詢問，我們會照實回覆能不能協助。
+
+**二手琴需要整套換弦嗎？**
+
+不一定。弦沒有變色、起毛、也還撐得住音準，可以先用；但如果賣家記不得上次換弦的時間，建議把整套換弦的費用先算進預算。換弦與調音的作法整理在[豎琴保養與調音](/knowledge/harp-care-tuning/)。
+    `},{id:"harp-rental",tag:"租借服務",tagColor:"#14625f",readTime:"5 分鐘",title:"豎琴租借：17 弦每月 NT$500、27 弦每月 NT$1,200（台中）",summary:"台中豎琴租借的租金、押金與最短期限：17 弦每月 NT$500、27 弦每月 NT$1,200，小豎琴免押金，最短租 1 個月；演出用踏板豎琴 NT$10,000 / 2–7 天。另附租和買的實際試算，以及租金折抵購琴的規則。",content:`
+## 先看結論：租金、押金與最短期限
+
+在台中租一台小豎琴回家練習，**17 弦每月 NT$500、27 弦每月 NT$1,200，小豎琴不用押金**；以月計費，最短租一個月。演出、婚禮要用的踏板豎琴是 NT$10,000 / 2–7 天。
+
+| 型號 | 租金 | 押金 | 適合對象 |
+|---|---|---|---|
+| 17 弦豎琴 | NT$500 / 月 | 無 | 初學者、兒童、體驗用 |
+| 27 弦豎琴 | NT$1,200 / 月 | 無 | 進階學員、ABRSM 備考 |
+| 踏板豎琴 | NT$10,000 / 2–7 天 | NT$50,000（運費另計） | 演出、婚禮、活動 |
+
+規則有三條：**以月計費、最短租借期 1 個月**；**踏板豎琴需提前 3 天預約，運費依地區另計**；長期租借可以來電洽詢優惠方案。租借期間如果決定買琴，**租金可折抵部分購琴費用**。
+
+## 為什麼建議先租再買
+
+豎琴的音色和手感，親手彈過才知道合不合。先租一段時間，你會知道三件事：家裡放得下嗎、每天真的會坐下來練嗎、這個弦數夠不夠用。確定之後再買，比較不會買錯弦數又要換琴。
+
+小朋友尤其適合先租。孩子的興趣要試過才知道，17 弦每月 NT$500，等他真的坐得住、想彈更多曲子，再考慮買。
+
+## 租和買，怎麼算比較省
+
+用官網公布的價格直接算，答案很清楚：
+
+| 你的情況 | 租一年要付 | 直接買新琴 | 怎麼選 |
+|---|---|---|---|
+| 想先試 17 弦 | NT$500 × 12 ＝ NT$6,000 | Hope Harp 17S NT$5,980 | **打算長期學就直接買**，租一年的錢差不多等於一台新的 17S |
+| 想試 1～3 個月 | NT$500～1,500 | — | 先租，確定喜歡再買 |
+| 要用 27 弦備考或上進階課 | NT$1,200 × 12 ＝ NT$14,400 | Hope Harp 27S NT$42,800 | **租比較有彈性**，一年的租金約為新琴的三分之一 |
+| 演出、婚禮要踏板豎琴 | NT$10,000 / 2–7 天 | 踏板豎琴新品動輒數十萬 | 一定是租 |
+
+也就是說：**小豎琴短期試、長期買；27 弦以上租起來划算得多。** 各型號的規格差別可以看[幾弦的豎琴怎麼選](/knowledge/harp-strings-guide/)，完整價格看[豎琴多少錢](/knowledge/harp-price/)。
+
+## 踏板豎琴租借（演出、婚禮、活動）
+
+踏板豎琴是音樂廳規格的大琴，七個踏板可以在演奏中隨時轉調。租借條件是 **NT$10,000 / 2–7 天，押金 NT$50,000，運費依地區另計，需提前 3 天預約**。
+
+如果你是活動主辦或新娘秘書，建議預約時就講清楚三件事：場地有沒有電梯與平坦通道、演出時間長度、現場是誰演奏（需不需要一起安排演奏者）。踏板豎琴和小豎琴差在哪，可以看[撥鍵豎琴是什麼](/knowledge/lever-harp/)。
+
+## 租來的琴，在家要怎麼照顧
+
+- **不要放在冷氣正對面或陽光直曬的窗邊**，台灣的濕度變化本來就大，溫差再加上去，走音會更明顯。
+- **剛搬回家的琴一定會走音**，這是正常的，練習前先調一次音。
+- **弦斷了先不要自己硬換**，拍照傳給老師問一下型號與位置。
+
+保養與調音的完整作法在[豎琴保養與調音](/knowledge/harp-care-tuning/)。
+
+## 怎麼預約
+
+用 LINE 或電話跟賴薇伊老師說你想租的弦數與時間即可，地點在台中市西區忠明南路 358 號，也可以同時安排試彈。課程與租借的完整說明在[豎琴個別課程](/courses/harp/)。
+
+## 常見問題
+
+**最短可以租多久？**
+
+最短租借期 1 個月，以月計費。想租更久可以來電洽詢長期優惠方案。
+
+**要押金嗎？**
+
+17 弦與 27 弦小豎琴不用押金；踏板豎琴押金 NT$50,000，運費另計。
+
+**租金可以折抵買琴的錢嗎？**
+
+可以。租借期間如果決定購買，租金可折抵部分購琴費用，實際折抵方式請在租借前先跟老師確認。
+
+**踏板豎琴可以租來演出嗎？**
+
+可以，NT$10,000 / 2–7 天，需提前 3 天預約，運費依地區另計；押金 NT$50,000。
+
+**租琴需要先上課嗎？**
+
+租借服務主要是提供給學員在家練習用。如果你還沒上課、只是想先試試看，可以直接詢問老師目前能不能安排。
+    `},{id:"harp-lesson-fee",tag:"課程費用",tagColor:"#1e4d8c",readTime:"6 分鐘",title:"學豎琴要多少錢？台中豎琴課學費與第一年花費試算",summary:"台中豎琴個別課一般課程每堂 NT$1,000、進階課程每堂 NT$1,500，每堂 50 分鐘、一期 8 堂。本文用公布的價格試算第一年要花多少：學費加上租琴或買琴，最小的起步約 NT$9,500，並說明樂齡課與師資班的費用怎麼問。",content:`
+## 先看結論：一堂 NT$1,000 起，一期 8 堂
+
+台中賴薇伊老師的豎琴個別課：**一般課程每堂 NT$1,000、進階課程每堂 NT$1,500，每堂 50 分鐘，一期 8 堂課**（一期合計 NT$8,000 或 NT$12,000）。適合 5 歲以上到樂齡族群，台中實體課程，也可以安排線上教學。
+
+| 課程 | 每堂學費 | 一期 8 堂合計 | 內容重點 |
+|---|---|---|---|
+| 一般課程 | NT$1,000 / 堂（50 分鐘） | NT$8,000 | 個別教學、依個人進度彈性調整、提供學習進度報告 |
+| 進階課程 | NT$1,500 / 堂（50 分鐘） | NT$12,000 | 個別教學、ABRSM 考級備考、進階曲目指導、演出機會與發表會 |
+
+課程內容、適合對象與報名方式，完整寫在[豎琴個別課程](/courses/harp/)。
+
+## 學費以外，還要準備什麼
+
+學豎琴的花費分成兩塊：**學費**和**琴**。學費上面已經列清楚，琴有三條路可以走：
+
+| 做法 | 花費 | 適合誰 |
+|---|---|---|
+| 先租 17 弦 | NT$500 / 月（免押金） | 還在確認興趣、小朋友剛開始 |
+| 先租 27 弦 | NT$1,200 / 月（免押金） | 要上進階課、準備檢定 |
+| 直接買入門琴 | Hope Harp 17S NT$5,980 | 確定要長期學 |
+| 直接買主力琴 | Hope Harp 27S NT$42,800 | 目標是檢定、演出或長期使用 |
+
+租借的規則（最短 1 個月、租金可折抵部分購琴費用）整理在[豎琴租借](/knowledge/harp-rental/)；各型號差別看[幾弦的豎琴怎麼選](/knowledge/harp-strings-guide/)。
+
+## 第一年大概要花多少？用公布的價格試算
+
+下面是用官網公布的單價直接乘出來的，實際堂數以你和老師安排的進度為準：
+
+| 情況 | 學費 | 琴 | 一年合計（估） |
+|---|---|---|---|
+| 一週一堂、一年約 48 堂，先租 17 弦 | 48 × NT$1,000 ＝ NT$48,000 | 12 × NT$500 ＝ NT$6,000 | 約 NT$54,000 |
+| 一週一堂、一年約 48 堂，直接買 17S | 48 × NT$1,000 ＝ NT$48,000 | NT$5,980 | 約 NT$54,000 |
+| 兩週一堂、一年約 24 堂，先租 17 弦 | 24 × NT$1,000 ＝ NT$24,000 | 12 × NT$500 ＝ NT$6,000 | 約 NT$30,000 |
+| 先上一期試試看（8 堂）＋ 租 3 個月 | NT$8,000 | 3 × NT$500 ＝ NT$1,500 | 約 NT$9,500 |
+
+想先確認自己會不會持續，最小的起步就是**一期 8 堂＋租 3 個月**，大約 NT$9,500。
+
+另外會零星花到的：調音器與調音扳手、樂譜、換弦。這幾項金額不大，但要有心理準備；調音多久做一次、要用什麼工具，寫在[豎琴保養與調音](/knowledge/harp-care-tuning/)。如果要考 ABRSM，**報名費是考試單位另外收取的**，級別與費用請看[ABRSM 英國皇家音樂學院豎琴考級完整指南](/knowledge/abrsm-harp/)與考試單位當年度公告。
+
+## 樂齡課程與師資班的費用
+
+- **樂齡音樂輔療課程**（50 歲以上）：個別課程 NT$1,000 / 堂、進階課程 NT$1,500 / 堂，同樣是 50 分鐘、一期 8 堂。此外老師在中國文化大學推廣教育部台中分部也有正式開設課程，那邊另有學費標準，請直接洽詢。詳見[樂齡音樂輔療課程](/courses/senior/)。
+- **天使啟航師資班 2027**：2027 年分三梯次、每梯 3 天 24 小時、每梯 10 人，**費用與報名方式請透過 LINE 或電話洽詢**。詳見[天使啟航師資班](/courses/teacher/)。
+
+## 怎麼開始
+
+用 LINE 或電話預約試課，跟老師說年齡、有沒有學過其他樂器、想達到什麼目標（興趣、檢定、演出），她會直接建議從哪一種課開始、需不需要先租琴。零基礎要準備什麼，可以先看[零基礎學豎琴](/knowledge/beginner-guide/)。
+
+## 常見問題
+
+**豎琴課一堂多少錢？**
+
+一般課程每堂 NT$1,000、進階課程每堂 NT$1,500，每堂 50 分鐘。
+
+**一定要一次買一期 8 堂嗎？**
+
+課程是以一期 8 堂計費（一般課程一期 NT$8,000、進階課程一期 NT$12,000）。想單堂試上請直接詢問老師目前能不能安排。
+
+**學費有包含豎琴嗎？**
+
+沒有。琴要自己準備，可以先租（17 弦每月 NT$500、27 弦每月 NT$1,200），或直接買入門的 Hope Harp 17S（NT$5,980）。
+
+**可以上線上課嗎？**
+
+可以，官網寫明台中實體課程之外亦可安排線上教學；實際怎麼進行（鏡頭角度、調音怎麼協助）請在預約時一起討論。
+
+**檢定費用包含在學費裡嗎？**
+
+不包含。ABRSM 報名費由考試單位收取，依當年度公告；學費只包含上課。
+
+**5 歲以下可以學嗎？**
+
+個別課程的適合對象寫的是 5 歲以上。更小的孩子可以先從 8 弦小豎琴的親子音樂遊戲開始，做法寫在[8 弦小豎琴適合幾歲](/knowledge/kids-8-string-harp/)。
+    `},{id:"harp-vs-piano",tag:"學習比較",tagColor:"#2d7a4f",readTime:"4 分鐘",title:"學豎琴還是鋼琴？小朋友學豎琴幾歲開始、兩種樂器怎麼選",summary:"豎琴手一碰弦就有聲音、入門比鋼琴快，但曲目與升學資源不如鋼琴多。本文比較兩種樂器的入門難度、花費、適合年齡與家裡放不放得下，幫家長判斷孩子先學哪一個。",content:`
 ## 豎琴與鋼琴的主要差異
 
 | 比較項目 | 豎琴 | 鋼琴 |
@@ -335,7 +709,7 @@ Hope Harp希望豎琴由賴薇伊老師親自研發設計，擁有台灣專利�
 **斷弦或弦太舊**（聲音悶、一直調不準）時就需要換弦。換弦要注意弦的規格和纏繞方式，第一次換建議請老師示範。
 
 **需要維修時**，賴薇伊老師是 Aoyama 日本原廠受訓認定的台灣維修技師，也提供 Hope Harp希望豎琴的調音與維修諮詢，可以透過 LINE（pianoaaa）詢問。還在挑琴的話，可以先看[Hope Harp希望豎琴型號與型錄](/harps/)。
-    `},{id:"senior-music",tag:"樂齡音樂",tagColor:"#c0392b",readTime:"5 分鐘",title:"50 歲以上學豎琴：樂齡族群的音樂療癒完整指南",summary:"許多人認為學樂器要趁年輕，其實 50 歲以後學音樂一樣有很多樂趣與收穫。本文專為樂齡族群介紹豎琴學習的優點與注意事項。",content:`
+    `},{id:"senior-music",tag:"樂齡音樂",tagColor:"#c0392b",readTime:"5 分鐘",title:"樂齡音樂課程：50 歲以上學豎琴的完整指南",summary:"50 歲以後學豎琴：撥弦是溫和的手指動作、坐著就能彈，不需要讀譜基礎也能開始。本文說明樂齡學琴的節奏怎麼安排、每次練多久、要注意什麼。課程屬音樂與藝術活動，非醫療行為，不能取代醫療或專業治療。",content:`
 ## 樂齡學豎琴的特別優勢
 
 **1. 什麼年紀都能開始**
@@ -365,7 +739,90 @@ Hope Harp希望豎琴由賴薇伊老師親自研發設計，擁有台灣專利�
 ## 學員心聲
 
 「我 62 歲才開始學豎琴，原本擔心學不會。但賴老師很有耐心，用我能理解的方式教學。現在每次上課都是我一週中最期待的時光。」— 學員家長（台中，65 歲）
-    `},{id:"abrsm-harp",tag:"考級指南",tagColor:"#077e9b",readTime:"4 分鐘",title:"ABRSM 英國皇家音樂學院豎琴考級完整指南",summary:"ABRSM 是全球最具權威的音樂考級機構，豎琴考級分為 1–8 級。本文介紹考級制度、各級要求、備考建議，以及台灣的考試資訊。",content:`
+    `},{id:"music-therapy-course",tag:"樂齡音樂",tagColor:"#c0392b",readTime:"7 分鐘",title:"音樂輔療課程是什麼？台中樂齡音樂課、費用與認證的真實情況",summary:"搜音樂輔療的人通常是三種需求：自己上課、帶長輩活動、或是找證照。本文說明台中樂齡音樂輔療課程實際在做什麼、費用與地點，並誠實交代師資班拿到的是 Hope Harp希望豎琴授權教師認證，不是政府或公會核發的證照。",content:`
+## 先看結論：你要找的是哪一種？
+
+搜「音樂輔療」的人，通常是三種需求，走的路不一樣：
+
+| 你的情況 | 你要找的是 | 在台中怎麼開始 |
+|---|---|---|
+| 自己或家中長輩想上課、想用音樂陪伴生活 | 樂齡音樂輔療課程（50 歲以上） | 每堂 50 分鐘、一期 8 堂，個別課程 NT$1,000 / 堂、進階課程 NT$1,500 / 堂 |
+| 想在長照、社區或安養機構帶音樂活動 | 先自己上課、累積實際帶活動的經驗 | 可以先上樂齡課程，再直接與老師討論方向 |
+| 在找某個單位核發的「音樂輔療師」證照 | 那要看核發單位的公告 | 賴薇伊老師目前開的是**豎琴教師**師資班，不是音樂輔療師培訓（下面說明差別） |
+
+先把最容易誤會的一句話講清楚：**樂齡音樂課程是音樂與藝術活動，不是醫療行為，不能取代醫療或專業治療。** 這句話寫在[樂齡音樂輔療課程](/courses/senior/)頁面上，也是我們對外一致的說法。
+
+## 樂齡音樂課程實際上在做什麼
+
+不是坐著聽講，也不是要把長輩訓練成演奏家。一堂 50 分鐘，通常包含這幾種活動：
+
+- **豎琴基礎演奏**：用輕鬆的方式撥弦、彈簡單的曲子，不強調技巧競爭。
+- **音樂欣賞與討論**：聽不同風格的豎琴音樂，分享感受與回憶。
+- **節奏與律動活動**：跟著節奏動一動，結合肢體的音樂活動。
+- **即興創作與表達**：用音樂說自己的事，不需要完美。
+- **合奏與互動**：小組一起彈，練習傾聽與配合。
+- **音樂冥想與放鬆**：以豎琴音樂引導放鬆，讓身心慢下來。
+
+為什麼選豎琴？撥弦是很溫和的手指動作，不像吹奏樂器需要肺部用力，也不像鋼琴需要固定的琴椅高度與踏板；琴身可以擺在膝上或桌上，坐輪椅的長輩也能參與。
+
+## 對長輩可能有什麼幫助
+
+許多研究探討音樂活動對樂齡族群的正向影響。課堂上比較常被長輩自己講出來的是這幾件事：
+
+- **專注與動腦**：演奏要同時用眼睛、耳朵與雙手，整堂課都在專心。
+- **放鬆與好心情**：豎琴音色溫和，專注在當下時心情會放鬆。
+- **活動雙手**：撥弦是溫和的手指動作，可以依自己的步調練。
+- **社交與陪伴**：每週有固定相聚的機會，合奏、欣賞、分享。
+- **成就感與自信心**：學會一首曲子，會重新發現自己還能做到什麼。
+- **生活多一份期待**：每週都有值得期待的課與練習。
+
+這些是活動帶來的感受，**不是療效保證**；如果長輩有失智、中風復健、憂鬱或其他醫療狀況，請以醫療團隊的建議為主，音樂課可以是生活的一部分，但不取代治療。
+
+## 費用、地點與可以問的事
+
+- **費用**：個別課程 NT$1,000 / 堂、進階課程 NT$1,500 / 堂，每堂 50 分鐘、一期 8 堂（一期合計 NT$8,000 或 NT$12,000）。進階課程另含音樂療癒方案設計、進度報告與家屬溝通、定期成果展示。
+- **地點**：台中市西區忠明南路 358 號。
+- **另一條路**：賴薇伊老師在**中國文化大學推廣教育部台中分部**也有正式開設課程，那邊另有學費標準，想走推廣部的班請直接洽詢。
+- 家屬最常問的是「長輩手不靈活／沒學過音樂／坐不久可以嗎」，這要看實際狀況，預約時直接說明，老師會據此安排。
+
+完整課程說明在[樂齡音樂輔療課程](/courses/senior/)；50 歲以後開始學豎琴的心理準備與練習方式，寫在[50 歲以上學豎琴](/knowledge/senior-music/)。
+
+## 想成為老師：師資班是「豎琴教師」培訓
+
+這一段要講得很清楚，因為很多人是搜「樂齡音樂輔療師資培訓」找過來的：
+
+**天使啟航師資班 2027 是豎琴教師培訓，不是音樂輔療師培訓。** 課程大綱是調音與維修入門、愛爾蘭豎琴教學法與入門曲目、舞台表演技巧與模擬檢定，最後提交試教影片通過評審。2027 年分三梯次、每梯 3 天 24 小時、每梯 10 人，1 月基礎班、7 月進階班、11 月表演合奏，中間 8/29 在文化部衡道堂公開演出。沒有豎琴基礎也可以參加，建議從 1 月的基礎班開始。費用與報名方式請透過 LINE 或電話洽詢，日期整理在[活動行事曆](/events/)，完整內容在[天使啟航師資班](/courses/teacher/)。
+
+**結業後拿到的是什麼**：結業 30 天內提交 5–8 分鐘試教影片（一首完整曲目＋示範初學者第一堂課），由賴薇伊老師評審，通過後頒發 **Hope Harp希望豎琴授權教師認證卡**。這是 Hope Harp希望豎琴自己核發的授權教師認證，**不是政府、學校或公會核發的證照**，也不是音樂治療師或音樂輔療師的專業資格。如果你需要的是某個單位的證照，請直接以那個單位當年度的公告為準。
+
+至於「音樂輔療師薪水」這類問題，實際收入會因場域（社區、機構、學校）、時數與合作方式差很多，我們不公布數字，也不建議用單一數字來規劃。
+
+## 常見問題
+
+**音樂輔療是什麼？和音樂治療一樣嗎？**
+
+在這個網站上，「樂齡音樂輔療課程」指的是以音樂與藝術活動陪伴 50 歲以上族群的課程：演奏、欣賞、律動、即興、合奏與放鬆。它是音樂與藝術活動，非醫療行為，不能取代醫療或專業治療；有醫療需求請諮詢醫療團隊。
+
+**你們的課程可以拿到音樂輔療師證照嗎？**
+
+不行。師資班通過評審後頒發的是 Hope Harp希望豎琴授權教師認證卡，屬於品牌自己的授權教師認證，不是政府或公會核發的證照。
+
+**台中哪裡可以上樂齡音樂課？**
+
+台中市西區忠明南路 358 號；此外中國文化大學推廣教育部台中分部也有正式開設課程，學費標準另計，請洽詢。
+
+**幾歲可以參加樂齡課程？**
+
+樂齡課程的適合對象是 50 歲以上。50 歲以下想學豎琴，走一般的[豎琴個別課程](/courses/harp/)即可，費用整理在[學豎琴要多少錢](/knowledge/harp-lesson-fee/)。
+
+**沒學過音樂、不會看譜可以嗎？**
+
+可以。樂齡課程不從樂理考試開始，會用聽、跟著彈、簡單的記譜方式進行；師資班則建議會基本讀譜，因為結業要提交試教影片。
+
+**長輩坐輪椅、手指不太靈活，能參與嗎？**
+
+撥弦是溫和的手指動作，琴可以放在膝上或桌上，依自己的步調練。實際能做到什麼程度要看個人狀況，預約時先說明，老師會調整活動內容。
+    `},{id:"abrsm-harp",tag:"考級指南",tagColor:"#077e9b",readTime:"4 分鐘",title:"ABRSM 英國皇家音樂學院豎琴考級完整指南",summary:"ABRSM 英國皇家音樂學院的豎琴考級分為 1–8 級，台灣可以報考。本文介紹考級制度、各級要求、備考安排與報名前要先確認的事（曲目需要的音域、能不能用撥鍵豎琴應考）。",content:`
 ## 什麼是 ABRSM 豎琴考級？
 
 ABRSM（英國皇家音樂學院聯合委員會）是全球規模最大、最具公信力的音樂考級機構，每年在全球 90 多個國家舉辦考試。豎琴考級分為 1–8 級，另有 Diploma 演奏文憑。
@@ -402,5 +859,5 @@ ABRSM（英國皇家音樂學院聯合委員會）是全球規模最大、最具
 4. **重視聽音訓練**：這是許多學生忽略的部分，卻佔 15 分
 
 如有意參加 ABRSM 考級，歡迎聯絡賴薇伊老師安排專屬備考課程。
-    `}];function K({article:t,onClick:n}){return e.jsxs(s.div,{"data-loc":"client/src/pages/HarpKnowledge.tsx:266",variants:f,className:"group p-6 rounded-sm border cursor-pointer transition-all duration-300 hover:shadow-xl hover:-translate-y-1",style:{borderColor:"#e8e4dc",background:"#fff"},onClick:n,children:[e.jsxs("div",{"data-loc":"client/src/pages/HarpKnowledge.tsx:270",className:"flex items-center gap-3 mb-4",children:[e.jsx("span",{"data-loc":"client/src/pages/HarpKnowledge.tsx:271",className:"text-[11px] px-3 py-1 rounded-full font-semibold text-white",style:{background:t.tagColor},children:t.tag}),e.jsxs("span",{"data-loc":"client/src/pages/HarpKnowledge.tsx:274",className:"flex items-center gap-1 text-xs",style:{color:"#9ca3af"},children:[e.jsx(w,{"data-loc":"client/src/pages/HarpKnowledge.tsx:275",className:"w-3 h-3"})," ",t.readTime]})]}),e.jsx("h3",{"data-loc":"client/src/pages/HarpKnowledge.tsx:278",className:"font-['Playfair_Display'] text-lg font-bold mb-3 group-hover:text-[#D4A017] transition-colors leading-snug",style:{color:"#0A3D62"},children:t.title}),e.jsx("p",{"data-loc":"client/src/pages/HarpKnowledge.tsx:281",className:"text-sm leading-relaxed mb-4",style:{color:"#6b7280"},children:t.summary}),e.jsxs("div",{"data-loc":"client/src/pages/HarpKnowledge.tsx:282",className:"flex items-center gap-1.5 text-sm font-semibold transition-colors group-hover:text-[#D4A017]",style:{color:"#0A3D62"},children:["閱讀全文 ",e.jsx(j,{"data-loc":"client/src/pages/HarpKnowledge.tsx:283",className:"w-4 h-4"})]})]})}function A({article:t,onClose:n}){return e.jsx(s.div,{"data-loc":"client/src/pages/HarpKnowledge.tsx:291",initial:{opacity:0},animate:{opacity:1},exit:{opacity:0},className:"fixed inset-0 z-[100] flex items-start justify-center p-4 pt-20 overflow-y-auto",style:{background:"rgba(0,0,0,0.6)"},onClick:n,children:e.jsxs(s.div,{"data-loc":"client/src/pages/HarpKnowledge.tsx:298",initial:{opacity:0,y:40},animate:{opacity:1,y:0},exit:{opacity:0,y:40},className:"relative w-full max-w-3xl rounded-sm p-8 mb-8",style:{background:"#fff"},onClick:a=>a.stopPropagation(),children:[e.jsx("button",{"data-loc":"client/src/pages/HarpKnowledge.tsx:305",onClick:n,className:"absolute top-4 right-4 p-2 rounded-full transition-colors hover:bg-gray-100","aria-label":"關閉",children:e.jsx(m,{"data-loc":"client/src/pages/HarpKnowledge.tsx:308",className:"w-5 h-5",style:{color:"#6b7280"}})}),e.jsxs("div",{"data-loc":"client/src/pages/HarpKnowledge.tsx:310",className:"flex items-center gap-3 mb-4",children:[e.jsx("span",{"data-loc":"client/src/pages/HarpKnowledge.tsx:311",className:"text-[11px] px-3 py-1 rounded-full font-semibold text-white",style:{background:t.tagColor},children:t.tag}),e.jsxs("span",{"data-loc":"client/src/pages/HarpKnowledge.tsx:314",className:"flex items-center gap-1 text-xs",style:{color:"#9ca3af"},children:[e.jsx(w,{"data-loc":"client/src/pages/HarpKnowledge.tsx:315",className:"w-3 h-3"})," ",t.readTime]})]}),e.jsx("h2",{"data-loc":"client/src/pages/HarpKnowledge.tsx:318",className:"font-['Playfair_Display'] text-2xl sm:text-3xl font-bold mb-6 leading-snug",style:{color:"#0A3D62"},children:t.title}),e.jsx("div",{"data-loc":"client/src/pages/HarpKnowledge.tsx:321",className:"prose prose-sm max-w-none",style:{color:"#374151"},children:t.content.trim().split(`
+    `}];function K({article:t}){return e.jsxs(s.a,{"data-loc":"client/src/pages/HarpKnowledge.tsx:266",variants:f,href:"/knowledge/"+t.id+"/",className:"group block p-6 rounded-sm border cursor-pointer transition-all duration-300 hover:shadow-xl hover:-translate-y-1",style:{borderColor:"#e8e4dc",background:"#fff",textDecoration:"none",color:"inherit"},children:[e.jsxs("div",{"data-loc":"client/src/pages/HarpKnowledge.tsx:270",className:"flex items-center gap-3 mb-4",children:[e.jsx("span",{"data-loc":"client/src/pages/HarpKnowledge.tsx:271",className:"text-[11px] px-3 py-1 rounded-full font-semibold text-white",style:{background:t.tagColor},children:t.tag}),e.jsxs("span",{"data-loc":"client/src/pages/HarpKnowledge.tsx:274",className:"flex items-center gap-1 text-xs",style:{color:"#9ca3af"},children:[e.jsx(w,{"data-loc":"client/src/pages/HarpKnowledge.tsx:275",className:"w-3 h-3"})," ",t.readTime]})]}),e.jsx("h3",{"data-loc":"client/src/pages/HarpKnowledge.tsx:278",className:"font-['Playfair_Display'] text-lg font-bold mb-3 group-hover:text-[#D4A017] transition-colors leading-snug",style:{color:"#0A3D62"},children:t.title}),e.jsx("p",{"data-loc":"client/src/pages/HarpKnowledge.tsx:281",className:"text-sm leading-relaxed mb-4",style:{color:"#6b7280"},children:t.summary}),e.jsxs("div",{"data-loc":"client/src/pages/HarpKnowledge.tsx:282",className:"flex items-center gap-1.5 text-sm font-semibold transition-colors group-hover:text-[#D4A017]",style:{color:"#0A3D62"},children:["閱讀全文 ",e.jsx(j,{"data-loc":"client/src/pages/HarpKnowledge.tsx:283",className:"w-4 h-4"})]})]})}function A({article:t,onClose:n}){return e.jsx(s.div,{"data-loc":"client/src/pages/HarpKnowledge.tsx:291",initial:{opacity:0},animate:{opacity:1},exit:{opacity:0},className:"fixed inset-0 z-[100] flex items-start justify-center p-4 pt-20 overflow-y-auto",style:{background:"rgba(0,0,0,0.6)"},onClick:n,children:e.jsxs(s.div,{"data-loc":"client/src/pages/HarpKnowledge.tsx:298",initial:{opacity:0,y:40},animate:{opacity:1,y:0},exit:{opacity:0,y:40},className:"relative w-full max-w-3xl rounded-sm p-8 mb-8",style:{background:"#fff"},onClick:a=>a.stopPropagation(),children:[e.jsx("button",{"data-loc":"client/src/pages/HarpKnowledge.tsx:305",onClick:n,className:"absolute top-4 right-4 p-2 rounded-full transition-colors hover:bg-gray-100","aria-label":"關閉",children:e.jsx(m,{"data-loc":"client/src/pages/HarpKnowledge.tsx:308",className:"w-5 h-5",style:{color:"#6b7280"}})}),e.jsxs("div",{"data-loc":"client/src/pages/HarpKnowledge.tsx:310",className:"flex items-center gap-3 mb-4",children:[e.jsx("span",{"data-loc":"client/src/pages/HarpKnowledge.tsx:311",className:"text-[11px] px-3 py-1 rounded-full font-semibold text-white",style:{background:t.tagColor},children:t.tag}),e.jsxs("span",{"data-loc":"client/src/pages/HarpKnowledge.tsx:314",className:"flex items-center gap-1 text-xs",style:{color:"#9ca3af"},children:[e.jsx(w,{"data-loc":"client/src/pages/HarpKnowledge.tsx:315",className:"w-3 h-3"})," ",t.readTime]})]}),e.jsx("h2",{"data-loc":"client/src/pages/HarpKnowledge.tsx:318",className:"font-['Playfair_Display'] text-2xl sm:text-3xl font-bold mb-6 leading-snug",style:{color:"#0A3D62"},children:t.title}),e.jsx("div",{"data-loc":"client/src/pages/HarpKnowledge.tsx:321",className:"prose prose-sm max-w-none",style:{color:"#374151"},children:t.content.trim().split(`
 `).map((a,c)=>a.startsWith("## ")?e.jsx("h3",{"data-loc":"client/src/pages/HarpKnowledge.tsx:324",className:"font-['Playfair_Display'] text-xl font-bold mt-6 mb-3",style:{color:"#0A3D62"},children:a.replace("## ","")},c):a.startsWith("**")&&a.endsWith("**")?e.jsx("p",{"data-loc":"client/src/pages/HarpKnowledge.tsx:327",className:"font-semibold mt-4 mb-2",style:{color:"#0A3D62"},children:a.replace(/\*\*/g,"")},c):a.startsWith("| ")?null:a.startsWith("1. ")||a.startsWith("2. ")||a.startsWith("3. ")||a.startsWith("4. ")?e.jsx("p",{"data-loc":"client/src/pages/HarpKnowledge.tsx:333",className:"ml-4 mb-1 text-sm leading-relaxed",children:a},c):a.startsWith("- ")?e.jsxs("p",{"data-loc":"client/src/pages/HarpKnowledge.tsx:336",className:"ml-4 mb-1 text-sm leading-relaxed",children:["• ",a.replace("- ","")]},c):a.trim()===""?e.jsx("div",{"data-loc":"client/src/pages/HarpKnowledge.tsx:338",className:"h-2"},c):e.jsx("p",{"data-loc":"client/src/pages/HarpKnowledge.tsx:339",className:"mb-2 text-sm leading-relaxed",children:a},c))}),e.jsxs("div",{"data-loc":"client/src/pages/HarpKnowledge.tsx:342",className:"mt-8 pt-6 border-t",style:{borderColor:"#e8e4dc"},children:[e.jsx("p",{"data-loc":"client/src/pages/HarpKnowledge.tsx:343",className:"text-sm mb-4",style:{color:"#6b7280"},children:"對豎琴學習有更多問題？歡迎聯絡賴薇伊老師。"}),e.jsxs("a",{"data-loc":"client/src/pages/HarpKnowledge.tsx:344",href:"https://line.me/ti/p/~pianoaaa",target:"_blank",rel:"noopener noreferrer",className:"inline-flex items-center gap-2 px-6 py-3 text-sm font-bold text-white rounded-sm transition-all hover:opacity-90",style:{background:"#06C755"},children:[e.jsx(h,{"data-loc":"client/src/pages/HarpKnowledge.tsx:347",className:"w-4 h-4"})," LINE 免費諮詢"]})]})]})})}const D=[{q:"豎琴難學嗎？多久可以彈出一首歌？",a:"豎琴入門並不難，大多數學生在第一堂課就能彈出簡單的旋律。以每週練習 3–4 次、每次 20–30 分鐘的頻率，通常 2–3 個月就能完整彈奏一首簡單的曲子，8 週可以結業。"},{q:"台中哪裡可以學豎琴？",a:"賴薇伊老師在台中提供豎琴個別課程，30 年教學經驗，從兒童到樂齡族群皆可教學。歡迎透過 LINE 或電話預約，可安排台中實體課程或線上教學。"},{q:"學豎琴需要先學鋼琴嗎？",a:"不需要！豎琴可以從零基礎開始學習。有鋼琴基礎的學生會學得更快，但完全沒有音樂基礎也可以學豎琴，老師會從最基礎的樂理開始教起。"},{q:"豎琴和踏板豎琴有什麼差別？",a:"無踏板豎琴（也稱為小豎琴或凱爾特豎琴）使用撥鍵調整半音，體積小、重量輕、價格親民，適合初學者。踏板豎琴是管弦樂團使用的大型豎琴，用腳踏板控制半音，音域更廣，適合進階演奏者。"},{q:"豎琴可以租借嗎？",a:"可以！賴薇伊老師提供短期租借服務：17 弦豎琴每月 NT$500，27 弦豎琴每月 NT$1,200，踏板豎琴 NT$10,000 / 2–7 天（押金 NT$50,000，運費另計）。租借是確認是否適合學豎琴的好方法。"},{q:"樂齡族群（50 歲以上）適合學豎琴嗎？",a:"非常適合！豎琴演奏坐著進行，音色柔和，對身體負擔小。撥弦的手指動作溫和，演奏時專注當下，許多長輩都很享受上課的時光。賴薇伊老師有專屬的樂齡音樂輔療課程。"},{q:"Hope Harp希望豎琴在哪裡購買？",a:"Hope Harp希望豎琴由賴薇伊老師親自研發設計，擁有台灣專利。歡迎透過聯絡方式洽詢購買，老師可依您的需求推薦最適合的型號。"},{q:"豎琴需要定期調音嗎？",a:"是的，豎琴需要定期調音，尤其是新琴或換弦後。建議每次練習前都簡單確認音準，每週進行一次完整調音。賴薇伊老師也提供豎琴維修與調音服務（Aoyama 豎琴維修技師）。"}];function I(){i.useEffect(()=>(u({title:"豎琴知識中心｜選琴、學習與保養指南｜Hope Harp希望豎琴",description:"豎琴知識中心，整理豎琴入門、選琴、價格、ABRSM 考級、練習與樂齡音樂療癒資訊。",path:"/knowledge"}),()=>b()),[]);const[t,n]=i.useState(null),[a,c]=i.useState(null);return e.jsxs("div",{"data-loc":"client/src/pages/HarpKnowledge.tsx:380",role:"main",className:"min-h-screen",style:{background:"#FAFAF7",fontFamily:"-apple-system, BlinkMacSystemFont, 'PingFang TC', 'Microsoft JhengHei', 'Noto Sans CJK TC', 'Noto Sans TC', sans-serif"},children:[e.jsx("div",{"data-loc":"client/src/pages/HarpKnowledge.tsx:382",className:"fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm",children:e.jsxs("div",{"data-loc":"client/src/pages/HarpKnowledge.tsx:383",className:"max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between",children:[e.jsx(d,{"data-loc":"client/src/pages/HarpKnowledge.tsx:384",href:"/",children:e.jsxs("span",{"data-loc":"client/src/pages/HarpKnowledge.tsx:385",className:"flex items-center gap-2 text-sm font-medium transition-colors hover:text-[#D4A017]",style:{color:"#0A3D62"},children:[e.jsx(p,{"data-loc":"client/src/pages/HarpKnowledge.tsx:386",className:"w-4 h-4"})," 返回首頁"]})}),e.jsx("span",{"data-loc":"client/src/pages/HarpKnowledge.tsx:389",className:"font-['Playfair_Display'] text-base font-semibold",style:{color:"#0A3D62"},children:"豎琴知識中心"}),e.jsx("a",{"data-loc":"client/src/pages/HarpKnowledge.tsx:390",href:"https://line.me/ti/p/~pianoaaa",target:"_blank",rel:"noopener noreferrer",className:"flex items-center gap-1.5 text-sm font-semibold px-4 py-2 rounded-sm text-white",style:{background:"#D4A017"},children:"免費諮詢"})]})}),e.jsx("section",{"data-loc":"client/src/pages/HarpKnowledge.tsx:398",className:"pt-28 pb-16 lg:pt-36 lg:pb-20",style:{background:"linear-gradient(135deg, #0A3D62 0%, #0d4f80 100%)"},children:e.jsxs("div",{"data-loc":"client/src/pages/HarpKnowledge.tsx:399",className:"max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center",children:[e.jsx(s.p,{"data-loc":"client/src/pages/HarpKnowledge.tsx:400",custom:0,variants:r,initial:"hidden",animate:"visible",className:"text-xs tracking-[0.25em] uppercase mb-4 font-semibold",style:{color:"#D4A017"},children:"Harp Knowledge Center"}),e.jsx(s.h1,{"data-loc":"client/src/pages/HarpKnowledge.tsx:404",custom:1,variants:r,initial:"hidden",animate:"visible",className:"font-['Playfair_Display'] text-4xl sm:text-5xl font-bold mb-6 text-white",children:"豎琴知識中心"}),e.jsx(s.p,{"data-loc":"client/src/pages/HarpKnowledge.tsx:408",custom:2,variants:r,initial:"hidden",animate:"visible",className:"max-w-2xl mx-auto text-lg text-white/75 mb-8",children:"由賴薇伊老師撰寫，30 年教學經驗的豎琴知識分享。從入門選琴到進階技巧，幫助您在豎琴學習路上少走彎路。"}),e.jsx(s.div,{"data-loc":"client/src/pages/HarpKnowledge.tsx:412",custom:3,variants:r,initial:"hidden",animate:"visible",className:"flex flex-wrap justify-center gap-3",children:["入門指南","選購指南","學習比較","練習技巧","樂齡音樂","考級指南"].map(l=>e.jsxs("span",{"data-loc":"client/src/pages/HarpKnowledge.tsx:415",className:"flex items-center gap-1.5 text-xs px-3 py-1.5 rounded-full text-white/80 border border-white/20",children:[e.jsx(y,{"data-loc":"client/src/pages/HarpKnowledge.tsx:416",className:"w-3 h-3"})," ",l]},l))})]})}),e.jsx("section",{"data-loc":"client/src/pages/HarpKnowledge.tsx:424",className:"py-20 lg:py-28",children:e.jsxs("div",{"data-loc":"client/src/pages/HarpKnowledge.tsx:425",className:"max-w-6xl mx-auto px-4 sm:px-6 lg:px-8",children:[e.jsxs("div",{"data-loc":"client/src/pages/HarpKnowledge.tsx:426",className:"flex items-center gap-3 mb-10",children:[e.jsx(H,{"data-loc":"client/src/pages/HarpKnowledge.tsx:427",className:"w-6 h-6",style:{color:"#D4A017"}}),e.jsx("h2",{"data-loc":"client/src/pages/HarpKnowledge.tsx:428",className:"font-['Playfair_Display'] text-2xl font-bold",style:{color:"#0A3D62"},children:"精選文章"})]}),e.jsx(s.div,{"data-loc":"client/src/pages/HarpKnowledge.tsx:430",variants:g,initial:"hidden",whileInView:"visible",viewport:{once:!0},className:"grid md:grid-cols-2 lg:grid-cols-3 gap-6",children:v.map(l=>e.jsx(K,{"data-loc":"client/src/pages/HarpKnowledge.tsx:433",article:l,onClick:()=>n(l)},l.id))})]})}),e.jsx("section",{"data-loc":"client/src/pages/HarpKnowledge.tsx:440",className:"py-20 lg:py-28",style:{background:"#0A3D62"},children:e.jsxs("div",{"data-loc":"client/src/pages/HarpKnowledge.tsx:441",className:"max-w-4xl mx-auto px-4 sm:px-6 lg:px-8",children:[e.jsxs("div",{"data-loc":"client/src/pages/HarpKnowledge.tsx:442",className:"text-center mb-14",children:[e.jsx(s.p,{"data-loc":"client/src/pages/HarpKnowledge.tsx:443",custom:0,variants:r,initial:"hidden",whileInView:"visible",viewport:{once:!0},className:"text-xs tracking-[0.25em] uppercase mb-3 font-semibold",style:{color:"#D4A017"},children:"FAQ"}),e.jsx(s.h2,{"data-loc":"client/src/pages/HarpKnowledge.tsx:447",custom:1,variants:r,initial:"hidden",whileInView:"visible",viewport:{once:!0},className:"font-['Playfair_Display'] text-3xl font-bold text-white",children:"豎琴常見問題"})]}),e.jsx(s.div,{"data-loc":"client/src/pages/HarpKnowledge.tsx:452",variants:g,initial:"hidden",whileInView:"visible",viewport:{once:!0},className:"space-y-3",children:D.map((l,o)=>e.jsxs(s.div,{"data-loc":"client/src/pages/HarpKnowledge.tsx:455",variants:f,className:"rounded-sm overflow-hidden",style:{background:"rgba(255,255,255,0.07)",border:"1px solid rgba(255,255,255,0.12)"},children:[e.jsxs("button",{"data-loc":"client/src/pages/HarpKnowledge.tsx:457",className:"w-full flex items-center justify-between p-5 text-left transition-colors hover:bg-white/5",onClick:()=>c(a===o?null:o),children:[e.jsx("span",{"data-loc":"client/src/pages/HarpKnowledge.tsx:460",className:"font-semibold text-sm pr-4 text-white",children:l.q}),a===o?e.jsx(N,{"data-loc":"client/src/pages/HarpKnowledge.tsx:462",className:"w-4 h-4 shrink-0",style:{color:"#D4A017"}}):e.jsx(m,{"data-loc":"client/src/pages/HarpKnowledge.tsx:463",className:"w-4 h-4 shrink-0",style:{color:"#D4A017"}})]}),e.jsx(x,{"data-loc":"client/src/pages/HarpKnowledge.tsx:465",children:a===o&&e.jsx(s.div,{"data-loc":"client/src/pages/HarpKnowledge.tsx:467",initial:{height:0,opacity:0},animate:{height:"auto",opacity:1},exit:{height:0,opacity:0},transition:{duration:.3},children:e.jsx("div",{"data-loc":"client/src/pages/HarpKnowledge.tsx:472",className:"px-5 pb-5 text-sm leading-relaxed text-white/70 border-t border-white/10 pt-4",children:l.a})})})]},o))})]})}),e.jsx("section",{"data-loc":"client/src/pages/HarpKnowledge.tsx:485",className:"py-20",style:{background:"#fff"},children:e.jsxs("div",{"data-loc":"client/src/pages/HarpKnowledge.tsx:486",className:"max-w-2xl mx-auto px-4 text-center",children:[e.jsx(s.h2,{"data-loc":"client/src/pages/HarpKnowledge.tsx:487",custom:0,variants:r,initial:"hidden",whileInView:"visible",viewport:{once:!0},className:"font-['Playfair_Display'] text-3xl font-bold mb-4",style:{color:"#0A3D62"},children:"還有其他問題？"}),e.jsx(s.p,{"data-loc":"client/src/pages/HarpKnowledge.tsx:491",custom:1,variants:r,initial:"hidden",whileInView:"visible",viewport:{once:!0},className:"text-[15px] mb-8",style:{color:"#6b7280"},children:"歡迎透過 LINE 直接詢問賴薇伊老師，提供免費的豎琴學習諮詢。"}),e.jsxs(s.div,{"data-loc":"client/src/pages/HarpKnowledge.tsx:495",custom:2,variants:r,initial:"hidden",whileInView:"visible",viewport:{once:!0},className:"flex flex-col sm:flex-row gap-4 justify-center",children:[e.jsxs("a",{"data-loc":"client/src/pages/HarpKnowledge.tsx:497",href:"https://line.me/ti/p/~pianoaaa",target:"_blank",rel:"noopener noreferrer",className:"flex items-center justify-center gap-2 px-8 py-4 text-sm font-bold text-white rounded-sm transition-all hover:opacity-90",style:{background:"#06C755"},children:[e.jsx(h,{"data-loc":"client/src/pages/HarpKnowledge.tsx:500",className:"w-4 h-4"})," LINE 免費諮詢"]}),e.jsx(d,{"data-loc":"client/src/pages/HarpKnowledge.tsx:502",href:"/",children:e.jsxs("span",{"data-loc":"client/src/pages/HarpKnowledge.tsx:503",className:"flex items-center justify-center gap-2 px-8 py-4 text-sm font-bold rounded-sm border-2 transition-all hover:bg-[#0A3D62] hover:text-white",style:{borderColor:"#0A3D62",color:"#0A3D62"},children:[e.jsx(p,{"data-loc":"client/src/pages/HarpKnowledge.tsx:505",className:"w-4 h-4"})," 返回首頁"]})})]})]})}),e.jsx(x,{"data-loc":"client/src/pages/HarpKnowledge.tsx:513",children:t&&e.jsx(A,{"data-loc":"client/src/pages/HarpKnowledge.tsx:515",article:t,onClose:()=>n(null)})})]})}export{I as default};
