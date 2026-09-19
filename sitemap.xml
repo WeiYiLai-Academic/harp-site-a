@@ -21,6 +21,22 @@
     </image:image>
   </url>
   <url>
+    <loc>https://taiwanharp.org/about/</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://taiwanharp.org/about/" />
+    <lastmod>2026-09-18</lastmod>
+    <image:image>
+      <image:loc>https://taiwanharp.org/img/harps/hope-harp-lineup-og.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://taiwanharp.org/contact/</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://taiwanharp.org/contact/" />
+    <lastmod>2026-09-18</lastmod>
+    <image:image>
+      <image:loc>https://taiwanharp.org/img/harps/hope-harp-lineup-og.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
     <loc>https://taiwanharp.org/harps/</loc>
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://taiwanharp.org/harps/" />
     <lastmod>2026-09-18</lastmod>
@@ -34,6 +50,14 @@
     <lastmod>2026-09-18</lastmod>
     <image:image>
       <image:loc>https://taiwanharp.org/img/CC4CB7C7-5E9B-4A7F-9551-002C170039BE_0620477a.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://taiwanharp.org/courses/</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://taiwanharp.org/courses/" />
+    <lastmod>2026-09-18</lastmod>
+    <image:image>
+      <image:loc>https://taiwanharp.org/img/harps/hope-harp-lineup-og.jpg</image:loc>
     </image:image>
   </url>
   <url>
