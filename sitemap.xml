@@ -21,6 +21,14 @@
     </image:image>
   </url>
   <url>
+    <loc>https://taiwanharp.org/shop/</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://taiwanharp.org/shop/" />
+    <lastmod>2026-09-18</lastmod>
+    <image:image>
+      <image:loc>https://taiwanharp.org/img/harps/hope-harp-lineup-og.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
     <loc>https://taiwanharp.org/about/</loc>
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://taiwanharp.org/about/" />
     <lastmod>2026-09-18</lastmod>
