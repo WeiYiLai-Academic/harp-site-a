@@ -393,9 +393,17 @@
     var act = $('#cart-actions');
     act.innerHTML = '';
     if (API) {
-      var go = document.createElement('a');
-      go.className = 'btn'; go.href = API + '/checkout'; go.textContent = '前往結帳';
-      act.appendChild(go);
+      // 用表單 POST，不能用連結：購物車在 taiwanharp.org 的 localStorage，
+      // 結帳頁在另一個網域，讀不到對方的 localStorage。
+      var fm = document.createElement('form');
+      fm.method = 'post'; fm.action = API + '/checkout';
+      var hid = document.createElement('input');
+      hid.type = 'hidden'; hid.name = 'items';
+      hid.value = JSON.stringify(cart.map(function (x) { return { sku: x.sku, qty: x.qty }; }));
+      var go = document.createElement('button');
+      go.type = 'submit'; go.className = 'add'; go.textContent = '前往結帳';
+      fm.appendChild(hid); fm.appendChild(go);
+      act.appendChild(fm);
     } else {
       // 還沒接上結帳系統時，**不要放一個按了沒反應的按鈕**
       var p = document.createElement('p');
