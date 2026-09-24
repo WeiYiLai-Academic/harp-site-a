@@ -84,10 +84,10 @@
   // 有顏色名稱的照片（型號照片；名稱取自正式站 /harps/）⇒ 資訊欄裡改放「選顏色」，選了就帶進購物車
   const colored = (p) => p.pics.length > 1 && p.pics.every((x) => x.c);
   function colorPicker(p) {
-    return `<fieldset class="sd-colors"><legend>選顏色：<b data-cn>${esc(p.pics[0].c)}</b><span>共 ${p.pics.length} 色</span></legend>
+    return `<fieldset class="sd-colors"><legend>選顏色：<b data-cn>${esc(p.pics[0].c)}</b><span>照片為部分顏色，每款都有 16 色</span></legend>
       <div class="sd-sw" role="radiogroup" aria-label="顏色">${p.pics.map((x, i) => `<button type="button" role="radio" data-thumb="${i}" aria-checked="${i ? 'false' : 'true'}"${i ? ' tabindex="-1"' : ''}>
         <img src="${esc(x.t)}" width="48" height="64" alt="" loading="lazy" decoding="async"><span>${esc(x.c)}</span></button>`).join('')}</div>
-      <p class="sd-cnote">付款完成後老師會與您聯絡確認顏色與出貨時間；顏色的現貨與訂製時間也可以先用 LINE 問老師。</p></fieldset>`;
+      <p class="sd-cnote">現貨顏色請先用 LINE 詢問，指定顏色可訂製，交期約 70 天；選的顏色會帶到結帳備註，付款完成後老師會與您聯絡確認顏色與出貨時間。</p></fieldset>`;
   }
   // 常一起買（詳細頁）：只列真實商品；已在車裡的不列
   function crossHtml(sku) {

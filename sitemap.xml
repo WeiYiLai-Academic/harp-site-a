@@ -41,13 +41,13 @@
       <image:loc>https://taiwanharp.org/img/harps/hope-27s-natural-maple-w720.webp</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://taiwanharp.org/_r/static/hope-34-w720.webp</image:loc>
+      <image:loc>https://taiwanharp.org/img/harps/hope-34-natural-maple-w720.webp</image:loc>
     </image:image>
     <image:image>
       <image:loc>https://taiwanharp.org/img/harps/hope-36s-natural-maple-w720.webp</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://taiwanharp.org/_r/static/hope-38-w720.webp</image:loc>
+      <image:loc>https://taiwanharp.org/img/harps/hope-38-iridescent-blue-violet-w720.webp</image:loc>
     </image:image>
     <image:image>
       <image:loc>https://taiwanharp.org/img/RON_6288_c3846511-w1100.webp</image:loc>
@@ -76,10 +76,10 @@
       <image:loc>https://taiwanharp.org/img/harps/hope-36s-natural-maple-w720.webp</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://taiwanharp.org/img/harp-34-full2_5ebc7cbe.jpg</image:loc>
+      <image:loc>https://taiwanharp.org/img/products/ly15-1.webp</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://taiwanharp.org/img/harp-40-cropped_0e7cca0c.jpg</image:loc>
+      <image:loc>https://taiwanharp.org/img/harps/hope-34-pearl-white-w720.webp</image:loc>
     </image:image>
     <image:image>
       <image:loc>https://taiwanharp.org/_r/static/tammy-harp-studio-480w.webp</image:loc>
@@ -163,10 +163,16 @@
       <image:loc>https://taiwanharp.org/img/harps/hope-27s-sky-blue-w720.webp</image:loc>
     </image:image>
     <image:image>
-      <image:loc>https://taiwanharp.org/_r/static/harps/hope-34-w720.webp</image:loc>
+      <image:loc>https://taiwanharp.org/img/harps/hope-34-pearl-white-w720.webp</image:loc>
     </image:image>
     <image:image>
       <image:loc>https://taiwanharp.org/img/harps/hope-36s-natural-maple-w720.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://taiwanharp.org/img/harps/hope-38-iridescent-blue-violet-w720.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://taiwanharp.org/_r/static/harps/hope-34-w720.webp</image:loc>
     </image:image>
     <image:image>
       <image:loc>https://taiwanharp.org/_r/static/harps/hope-38-w720.webp</image:loc>
@@ -299,7 +305,13 @@
       <image:loc>https://taiwanharp.org/img/harps/hope-27s-sky-blue-w240.webp</image:loc>
     </image:image>
     <image:image>
+      <image:loc>https://taiwanharp.org/img/harps/hope-34-pearl-white-w240.webp</image:loc>
+    </image:image>
+    <image:image>
       <image:loc>https://taiwanharp.org/img/harps/hope-36s-natural-maple-w240.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://taiwanharp.org/img/harps/hope-38-iridescent-blue-violet-w240.webp</image:loc>
     </image:image>
   </url>
   <url>
@@ -322,7 +334,13 @@
       <image:loc>https://taiwanharp.org/img/harps/hope-27s-sky-blue-w240.webp</image:loc>
     </image:image>
     <image:image>
+      <image:loc>https://taiwanharp.org/img/harps/hope-34-pearl-white-w240.webp</image:loc>
+    </image:image>
+    <image:image>
       <image:loc>https://taiwanharp.org/img/harps/hope-36s-natural-maple-w240.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://taiwanharp.org/img/harps/hope-38-iridescent-blue-violet-w240.webp</image:loc>
     </image:image>
   </url>
   <url>
@@ -345,7 +363,13 @@
       <image:loc>https://taiwanharp.org/img/harps/hope-27s-sky-blue-w240.webp</image:loc>
     </image:image>
     <image:image>
+      <image:loc>https://taiwanharp.org/img/harps/hope-34-pearl-white-w240.webp</image:loc>
+    </image:image>
+    <image:image>
       <image:loc>https://taiwanharp.org/img/harps/hope-36s-natural-maple-w240.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://taiwanharp.org/img/harps/hope-38-iridescent-blue-violet-w240.webp</image:loc>
     </image:image>
   </url>
   <url>
@@ -368,7 +392,13 @@
       <image:loc>https://taiwanharp.org/img/harps/hope-27s-sky-blue-w240.webp</image:loc>
     </image:image>
     <image:image>
+      <image:loc>https://taiwanharp.org/img/harps/hope-34-pearl-white-w240.webp</image:loc>
+    </image:image>
+    <image:image>
       <image:loc>https://taiwanharp.org/img/harps/hope-36s-natural-maple-w240.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://taiwanharp.org/img/harps/hope-38-iridescent-blue-violet-w240.webp</image:loc>
     </image:image>
   </url>
   <url>
@@ -407,7 +437,13 @@
       <image:loc>https://taiwanharp.org/img/harps/hope-27s-sky-blue-w240.webp</image:loc>
     </image:image>
     <image:image>
+      <image:loc>https://taiwanharp.org/img/harps/hope-34-pearl-white-w240.webp</image:loc>
+    </image:image>
+    <image:image>
       <image:loc>https://taiwanharp.org/img/harps/hope-36s-natural-maple-w240.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://taiwanharp.org/img/harps/hope-38-iridescent-blue-violet-w240.webp</image:loc>
     </image:image>
   </url>
   <url>
@@ -430,7 +466,13 @@
       <image:loc>https://taiwanharp.org/img/harps/hope-27s-sky-blue-w240.webp</image:loc>
     </image:image>
     <image:image>
+      <image:loc>https://taiwanharp.org/img/harps/hope-34-pearl-white-w240.webp</image:loc>
+    </image:image>
+    <image:image>
       <image:loc>https://taiwanharp.org/img/harps/hope-36s-natural-maple-w240.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://taiwanharp.org/img/harps/hope-38-iridescent-blue-violet-w240.webp</image:loc>
     </image:image>
   </url>
   <url>
@@ -477,7 +519,13 @@
       <image:loc>https://taiwanharp.org/img/harps/hope-27s-sky-blue-w240.webp</image:loc>
     </image:image>
     <image:image>
+      <image:loc>https://taiwanharp.org/img/harps/hope-34-pearl-white-w240.webp</image:loc>
+    </image:image>
+    <image:image>
       <image:loc>https://taiwanharp.org/img/harps/hope-36s-natural-maple-w240.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://taiwanharp.org/img/harps/hope-38-iridescent-blue-violet-w240.webp</image:loc>
     </image:image>
   </url>
   <url>
@@ -524,7 +572,13 @@
       <image:loc>https://taiwanharp.org/img/harps/hope-27s-sky-blue-w240.webp</image:loc>
     </image:image>
     <image:image>
+      <image:loc>https://taiwanharp.org/img/harps/hope-34-pearl-white-w240.webp</image:loc>
+    </image:image>
+    <image:image>
       <image:loc>https://taiwanharp.org/img/harps/hope-36s-natural-maple-w240.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://taiwanharp.org/img/harps/hope-38-iridescent-blue-violet-w240.webp</image:loc>
     </image:image>
   </url>
   <url>
