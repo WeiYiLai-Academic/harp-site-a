@@ -1,0 +1,299 @@
+/* 活動頁（/events/、/performances/、/concert/）。共用零件（CTA 帶、FAQ、弦線）在 courses.css。 */
+
+/* ── 頁首 ───────────────────────── */
+.e-hero {
+  position: relative; overflow: hidden; color: var(--on-dark);
+  margin-top: calc(-1 * var(--hd-h)); padding: calc(var(--hd-h) + clamp(2.5rem, 2rem + 4vw, 5.5rem)) 0 clamp(3rem, 2.4rem + 3vw, 5rem);
+  background: radial-gradient(50rem 26rem at 80% 0%, rgba(201, 160, 78, .18), transparent 60%), linear-gradient(180deg, var(--ink), var(--ink-2));
+}
+.e-hero .hero-strings { right: -40px; top: 30px; height: 120%; opacity: .5; }
+@media (max-width: 899px) { .e-hero .hero-strings { opacity: .2; right: -120px; } }
+.e-hero-in { position: relative; }
+.e-hero h1 { font-size: var(--fs-3xl); }
+.e-hero .lead { color: var(--on-dark-2); }
+.e-hero .eyebrow { color: var(--gold-lt); }
+.e-hero .breadcrumb, .e-hero .breadcrumb a { color: var(--on-dark-2); }
+.e-hero .breadcrumb { margin-bottom: var(--s-6); }
+.e-hero .btn-ghost { --fg: var(--on-dark); border-color: rgba(244, 238, 226, .3); }
+.e-updated { display: inline-block; margin: var(--s-3) 0 0; padding: .3em 1em; border-radius: var(--r-pill); border: 1px solid rgba(230, 201, 135, .4); color: var(--gold-lt); font-size: var(--fs-sm); }
+
+/* ── 主打音樂會 ───────────────────── */
+.feature { background: var(--ink-2); color: var(--on-dark); padding-block: clamp(3rem, 2rem + 4vw, 6rem); position: relative; }
+.feature::before { content: ""; position: absolute; inset: 0 0 auto; height: 1px; background: linear-gradient(90deg, transparent, var(--gold), transparent); opacity: .5; }
+.feature-in { display: grid; gap: var(--s-7); align-items: center; }
+@media (min-width: 900px) { .feature-in { grid-template-columns: .75fr 1.25fr; gap: var(--s-8); } }
+.feature-poster { margin: 0; justify-self: center; width: min(100%, 380px); display: block; position: relative; }
+.feature-poster img { border-radius: var(--r-md); box-shadow: 0 30px 70px -20px rgba(0, 0, 0, .6), 0 0 0 1px rgba(230, 201, 135, .3); }
+@media (max-width: 899px) { .feature-poster { width: min(76%, 320px); } }
+.feature-txt h2 { font-size: var(--fs-2xl); margin-bottom: var(--s-5); }
+.feature-txt h2 span { display: block; font-size: .55em; font-weight: 500; letter-spacing: .14em; margin-top: .35em; color: var(--gold-lt); }
+.feature .eyebrow { color: var(--gold-lt); }
+.feature-when { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s-5); padding: var(--s-4) 0; margin-bottom: var(--s-5); border-block: 1px solid var(--hair-dk); }
+.fw-date { display: flex; flex-direction: column; }
+.fw-date b { font-size: 3.4rem; line-height: 1; font-weight: 600; color: var(--gold-lt); }
+.fw-date small, .fw-time small { color: var(--on-dark-2); font-size: var(--fs-sm); }
+.fw-time { font: 700 var(--fs-lg)/1.5 var(--f-serif); padding-left: var(--s-5); border-left: 1px solid var(--hair-dk); }
+.feature .ev-dl dt { color: var(--on-dark-2); }
+.feature .ev-dl a { color: var(--gold-lt); }
+.feature .btn-ghost { --fg: var(--on-dark); border-color: rgba(244, 238, 226, .3); }
+.feature .btn-row { margin-top: var(--s-6); }
+.feature-more { display: flex; flex-wrap: wrap; gap: var(--s-3) var(--s-6); margin: var(--s-5) 0 0; }
+.feature-more .link-arrow { color: var(--gold-lt); min-height: 44px; }
+@media (max-width: 599px) { .feature .btn-row .btn, .feature-light .btn-row .btn { width: 100%; } }
+
+/* 淺色版（演出頁） */
+.feature-light .feature-when { border-color: var(--hair); }
+.feature-light .fw-date b { color: var(--gold-dk); }
+.feature-light .fw-date small, .feature-light .fw-time small { color: var(--text-3); }
+.feature-light .fw-time { border-color: var(--hair); }
+.feature-light .feature-txt h2 span { color: var(--gold-dk); }
+.feature-light .ev-dl a { color: var(--gold-dk); }
+
+/* ── 行事曆 ───────────────────────── */
+.cal-top { display: flex; flex-wrap: wrap; align-items: end; justify-content: space-between; gap: var(--s-4); margin-bottom: var(--s-7); }
+.cal-top h2 { margin: 0; }
+.filters { display: flex; flex-wrap: wrap; gap: var(--s-2); }
+.filters[hidden] { display: none; }
+.filter { min-height: 46px; padding: .4em 1.1em; border-radius: var(--r-pill); border: 1.5px solid var(--hair); background: var(--paper); font-size: var(--fs-sm); font-weight: 700; letter-spacing: .04em; color: var(--text-2); transition: background var(--t-fast), color var(--t-fast), border-color var(--t-fast); }
+.filter:hover { border-color: var(--gold); }
+.filter[aria-pressed="true"] { background: var(--ink); color: var(--gold-lt); border-color: var(--ink); }
+
+.timeline { display: grid; gap: var(--s-8); }
+.mo { display: grid; gap: var(--s-4); }
+.mo[hidden] { display: none; }
+@media (min-width: 900px) { .mo { grid-template-columns: 9rem 1fr; gap: var(--s-6); } .mo-hd { position: sticky; top: calc(var(--hd-h) + 1.5rem); align-self: start; } }
+.mo-hd { display: flex; align-items: baseline; gap: var(--s-3); }
+@media (min-width: 900px) { .mo-hd { flex-direction: column; gap: 0; } }
+.mo-m { font-size: 3.6rem; line-height: 1; color: var(--gold); font-weight: 500; }
+.mo-y { font-weight: 700; color: var(--text-2); letter-spacing: .06em; }
+.mo-list { display: grid; gap: var(--s-4); }
+
+.ev { position: relative; display: grid; grid-template-columns: auto 1fr; gap: var(--s-4) var(--s-5); padding: var(--s-5); background: var(--paper); border: 1px solid var(--hair); border-radius: var(--r-lg); box-shadow: var(--sh-1); }
+.ev[hidden] { display: none; }
+.ev::before { content: ""; position: absolute; left: 0; top: var(--s-5); bottom: var(--s-5); width: 3px; border-radius: 0 3px 3px 0; background: var(--gold); }
+.ev-concert::before { background: var(--rose); }
+.ev-senior::before { background: var(--wood-lt); }
+@media (min-width: 760px) { .ev { padding: var(--s-6); gap: var(--s-5) var(--s-6); } .ev-feature, .ev:has(.ev-poster) { grid-template-columns: auto 1fr 150px; } }
+.ev-date { display: flex; flex-direction: column; align-items: center; min-width: 4.6rem; padding: .5em .4em .6em; border-radius: var(--r-md); background: var(--ink); color: var(--on-dark); text-align: center; align-self: start; }
+.ev-m { font-size: var(--fs-sm); font-weight: 700; color: var(--gold-lt); }
+.ev-m small { font-size: .8em; }
+.ev-d { font-size: 2.6rem; line-height: 1; font-style: normal; font-weight: 600; }
+.ev-w { font-size: var(--fs-xs); color: var(--on-dark-2); }
+.ev-more { margin-top: .4em; padding-top: .35em; border-top: 1px solid var(--hair-dk); font-size: .8rem; color: var(--gold-lt); line-height: 1.35; max-width: 5rem; }
+.ev-body { min-width: 0; }
+.ev-tags { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s-2); margin: 0 0 var(--s-2); }
+.ev-year { font: 600 var(--fs-sm) var(--f-latin); color: var(--text-3); letter-spacing: .1em; }
+.ev h3 { font-size: var(--fs-lg); margin: 0 0 .2em; }
+.ev-when { color: var(--gold-dk); font-weight: 700; margin-bottom: var(--s-3); }
+.ev-dl { display: grid; grid-template-columns: max-content 1fr; gap: .45em 1em; margin: 0 0 var(--s-4); font-size: var(--fs-sm); }
+.ev-dl dt { color: var(--text-3); font-weight: 700; white-space: nowrap; }
+.ev-dl dd { margin: 0; }
+.ev-dl a { color: var(--gold-dk); }
+.ev-desc { color: var(--text-2); font-size: var(--fs-sm); }
+.ev-links { display: flex; flex-wrap: wrap; gap: var(--s-2); }
+.ev-links .btn { white-space: normal; text-align: left; }
+.ev-poster { grid-column: 1 / -1; justify-self: start; width: 160px; display: block; }
+.ev-poster img { border-radius: var(--r-sm); box-shadow: var(--sh-2); }
+@media (min-width: 760px) { .ev-poster { grid-column: auto; width: 150px; } }
+@media (max-width: 599px) { .ev { grid-template-columns: 1fr; } .ev-date { flex-direction: row; gap: .5em; align-items: baseline; padding: .4em .9em; justify-self: start; } .ev-more { border-top: 0; border-left: 1px solid var(--hair-dk); padding: 0 0 0 .5em; margin: 0; max-width: none; } .ev-d { font-size: 1.9rem; } }
+.ev-feature { border-color: rgba(180, 82, 106, .35); box-shadow: var(--sh-2); }
+.empty { text-align: center; color: var(--text-3); padding: var(--s-7) 0; }
+
+.past-sec { background: var(--sand); }
+.past-box > summary { list-style: none; cursor: pointer; display: flex; flex-wrap: wrap; align-items: baseline; gap: var(--s-4); padding: var(--s-3) 0; min-height: 48px; }
+.past-box > summary::-webkit-details-marker { display: none; }
+.past-box > summary h2 { margin: 0; font-size: var(--fs-xl); }
+.past-box > summary::after { content: "＋"; margin-left: auto; color: var(--gold-dk); font-size: 1.5rem; }
+.past-box[open] > summary::after { content: "－"; }
+.past-box .timeline { margin-top: var(--s-6); }
+.ev-past { opacity: .82; filter: saturate(.6); box-shadow: none; }
+.ev-past .ev-date { background: var(--text-3); }
+
+.rel-h { font-size: var(--fs-xl); }
+.rel { display: flex; flex-wrap: wrap; gap: var(--s-2) var(--s-3); }
+.rel a { display: inline-flex; align-items: center; gap: .4em; min-height: 48px; padding: .4em 1.1em; border-radius: var(--r-pill); border: 1px solid var(--hair); background: var(--paper); text-decoration: none; font-weight: 700; font-size: var(--fs-sm); }
+.rel a .ic { color: var(--gold-dk); }
+.rel a:hover { border-color: var(--gold); }
+
+/* ── 公益演出 ───────────────────── */
+.p-hero-in { position: relative; display: grid; gap: var(--s-7); align-items: center; }
+@media (min-width: 900px) { .p-hero-in { grid-template-columns: 1.2fr .8fr; } }
+.p-motto { font: 500 var(--fs-xl) var(--f-serif); color: var(--gold-lt); letter-spacing: .3em; margin-bottom: var(--s-4); }
+.p-hero-fig { margin: 0; justify-self: center; width: min(100%, 380px); }
+.p-hero-fig img { border-radius: 200px 200px var(--r-lg) var(--r-lg); aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 15%; box-shadow: 0 0 0 1px rgba(230, 201, 135, .35), var(--sh-3); }
+@media (max-width: 899px) { .p-hero-fig { width: min(70%, 300px); order: -1; } .p-hero .btn-row .btn { width: 100%; } }
+
+.program-sec { overflow: hidden; }
+.program-sec .path-strings { left: -80px; right: auto; top: 10%; height: 80%; opacity: .16; }
+.program-sec .sec-head .btn { margin-top: var(--s-3); }
+.prog { position: relative; display: grid; gap: var(--s-6); }
+@media (min-width: 960px) { .prog { grid-template-columns: 1.5fr 1fr; align-items: start; } }
+.prog-part { padding: var(--s-6); border-radius: var(--r-lg); background: var(--ink-2); border: 1px solid var(--hair-dk); }
+.prog-h { font-size: var(--fs-xl); color: var(--gold-lt); margin-bottom: .3em; }
+.prog-intro { color: var(--on-dark-2); font-size: var(--fs-sm); }
+.prog-set + .prog-set { margin-top: var(--s-5); }
+.prog-sub { margin: 0 0 var(--s-2); color: var(--gold); font-size: 1.15rem; letter-spacing: .1em; }
+.prog-list { list-style: none; padding: 0; margin: 0; }
+.prog-list li { display: grid; grid-template-columns: 2.4rem 1fr; gap: 0 var(--s-3); padding: .75em 0; border-top: 1px solid var(--hair-dk); }
+.pn { grid-row: span 2; font-size: 1.5rem; color: var(--gold); line-height: 1.2; }
+.pt { font: 700 var(--fs-md) var(--f-serif); color: var(--on-dark); }
+.pw { color: var(--on-dark-2); font-size: var(--fs-sm); }
+.prog-note { margin-top: var(--s-6); text-align: center; color: var(--on-dark-2); font-size: var(--fs-sm); }
+
+.hl-item { display: flex; align-items: center; gap: var(--s-4); padding: var(--s-5); border-radius: var(--r-lg); border: 1px solid var(--hair); background: var(--paper); }
+.hl-ic { flex: none; display: grid; place-items: center; width: 56px; height: 56px; border-radius: 50%; background: var(--ink); color: var(--gold-lt); }
+.hl-item h3 { font-size: var(--fs-md); margin: 0; }
+.pf-role { color: var(--gold-dk); font-size: var(--fs-sm); font-weight: 700; margin-bottom: .2em; }
+.pf h3 { font-size: var(--fs-xl); margin-bottom: .3em; }
+.pf p { color: var(--text-2); font-size: var(--fs-sm); }
+.pf-tags { display: flex; flex-wrap: wrap; gap: var(--s-2); margin: 0; }
+.past-feature .feature-poster { width: min(60%, 260px); }
+.about-ens h2 { font-size: var(--fs-xl); }
+.sec-head .lead a { color: var(--gold-dk); }
+
+/* ── 弦語童話 ───────────────────── */
+.c-cover {
+  position: relative; overflow: hidden; color: var(--on-dark);
+  margin-top: calc(-1 * var(--hd-h)); padding: calc(var(--hd-h) + clamp(2.5rem, 2rem + 4vw, 5rem)) 0 clamp(3rem, 2.4rem + 4vw, 6rem);
+  background: radial-gradient(40rem 30rem at 20% 20%, rgba(230, 201, 135, .14), transparent 60%), radial-gradient(40rem 30rem at 100% 100%, rgba(180, 82, 106, .18), transparent 60%), var(--ink);
+}
+.c-cover .hero-strings { right: -40px; top: 30px; height: 120%; opacity: .35; }
+.cover-in { position: relative; display: grid; gap: var(--s-7); align-items: center; }
+@media (min-width: 900px) { .cover-in { grid-template-columns: 1.2fr .8fr; } }
+.c-cover .breadcrumb, .c-cover .breadcrumb a { color: var(--on-dark-2); }
+.c-cover .breadcrumb { margin-bottom: var(--s-6); }
+.cover-org { color: var(--gold-lt); letter-spacing: .2em; font-size: var(--fs-sm); margin-bottom: var(--s-3); }
+.c-cover h1 { font-size: var(--fs-hero); letter-spacing: .2em; margin-bottom: .1em; }
+.cover-sub { font: 500 var(--fs-lg) var(--f-serif); color: var(--on-dark-2); letter-spacing: .1em; }
+.cover-meta { display: flex; flex-wrap: wrap; gap: var(--s-4) var(--s-6); margin: var(--s-6) 0; padding: var(--s-4) 0; border-block: 1px solid var(--hair-dk); }
+.cover-meta dt { font-size: var(--fs-xs); color: var(--on-dark-2); letter-spacing: .12em; }
+.cover-meta dd { margin: 0; font-weight: 700; font-size: var(--fs-md); }
+.cover-meta dd.latin { font-size: 1.6rem; font-weight: 600; color: var(--gold-lt); line-height: 1.2; }
+.cover-meta small { font-family: var(--f-sans); font-style: normal; font-size: .6em; color: var(--on-dark-2); }
+.cover-next .link-arrow { color: var(--gold-lt); min-height: 44px; }
+.cover-poster { justify-self: center; width: min(100%, 340px); display: block; text-decoration: none; text-align: center; transform: rotate(2deg); transition: transform var(--t-med) var(--ease); }
+.cover-poster:hover { transform: rotate(0); }
+.cover-poster img { border-radius: var(--r-sm); box-shadow: 0 30px 70px -20px rgba(0, 0, 0, .65); }
+.cover-poster span { display: inline-block; margin-top: var(--s-3); color: var(--on-dark-2); font-size: var(--fs-sm); }
+@media (max-width: 899px) { .cover-poster { width: min(68%, 280px); } }
+
+.c-part + .c-part { margin-top: var(--s-8); }
+.c-part-h { text-align: center; margin-bottom: var(--s-6); }
+.c-part-h span { display: block; font-size: var(--fs-xl); letter-spacing: .2em; }
+.c-part-h small { display: block; margin-top: .3em; font: 500 var(--fs-sm) var(--f-sans); color: var(--text-3); letter-spacing: .05em; }
+.c-pieces { list-style: none; padding: 0; margin: 0; display: grid; gap: var(--s-4); grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr)); }
+.piece { display: grid; grid-template-columns: 3rem 1fr; gap: var(--s-3); padding: var(--s-5); background: var(--paper); border-radius: var(--r-lg); border: 1px solid var(--hair); box-shadow: var(--sh-1); }
+.piece-n { font-size: 2rem; line-height: 1; color: var(--gold); font-weight: 500; }
+.piece h4 { font: 700 var(--fs-lg)/1.35 var(--f-serif); margin: 0 0 .25em; }
+.piece-who { margin: 0 0 .5em; font-weight: 700; font-size: var(--fs-sm); }
+.piece-who span { display: block; font-weight: 400; color: var(--text-3); }
+.piece-d { margin: 0; color: var(--text-2); font-size: var(--fs-sm); line-height: 1.75; }
+
+.crew { display: grid; gap: var(--s-5); grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); }
+.crew-g { padding: var(--s-5) 0; border-top: 1px solid var(--hair-dk); }
+.crew-role { color: var(--gold-lt); font-size: var(--fs-sm); letter-spacing: .14em; font-weight: 700; margin-bottom: var(--s-3); }
+.crew-p { margin-bottom: var(--s-3); }
+.crew-p b { display: block; font: 700 var(--fs-lg) var(--f-serif); }
+.crew-p span { color: var(--on-dark-2); font-size: var(--fs-sm); }
+.harpists { display: flex; flex-wrap: wrap; gap: var(--s-2); margin: 0; }
+.harpists span { padding: .25em .8em; border-radius: var(--r-pill); border: 1px solid var(--hair-dk); font-size: var(--fs-sm); }
+.thanks { margin: var(--s-8) auto 0; max-width: 40rem; text-align: center; font: 500 var(--fs-lg) var(--f-serif); }
+.thanks .latin { display: block; font-size: 2.2rem; color: var(--gold-lt); }
+.thanks small { display: block; margin-top: var(--s-3); font: 400 var(--fs-sm) var(--f-sans); color: var(--on-dark-2); }
+.pf-tags .chip { white-space: normal; border-radius: var(--r-sm); }
+
+/* ═════════ 第二輪：縮短 ═════════ */
+.ev-time { margin-left: .8em; color: var(--text-2); font-weight: 500; }
+.ev-key { margin: 0 0 var(--s-3); font-weight: 700; font-size: var(--fs-sm); }
+.ev-info > summary, .piece-more > summary { list-style: none; cursor: pointer; display: inline-flex; align-items: center; gap: .4em; min-height: 44px; font-size: var(--fs-sm); font-weight: 700; color: var(--gold-dk); }
+.ev-info > summary::-webkit-details-marker, .piece-more > summary::-webkit-details-marker { display: none; }
+.ev-info > summary::after, .piece-more > summary::after { content: "＋"; }
+.ev-info[open] > summary::after, .piece-more[open] > summary::after { content: "－"; }
+.ev-info[open] > summary { margin-bottom: var(--s-2); }
+@media (min-width: 760px) { .ev-info > summary, .piece-more > summary { display: none; } .ev-key { display: none; } }
+.piece-more .piece-d { margin-top: .2em; }
+@media (max-width: 599px) {
+  .e-hero, .c-cover { padding-top: calc(var(--hd-h) + 1.25rem); padding-bottom: 2.5rem; }
+  .e-hero .breadcrumb, .e-hero .eyebrow, .c-cover .breadcrumb { display: none; }
+  .e-hero h1 { font-size: 2.2rem; }
+  .e-hero .lead { font-size: var(--fs-md); }
+  .feature { padding-block: 2.5rem; }
+  .feature-in { gap: var(--s-5); }
+  .feature-poster { width: min(56%, 220px); }
+  .feature-txt h2 { font-size: 1.7rem; margin-bottom: var(--s-3); }
+  .fw-date b { font-size: 2.6rem; }
+  .feature .btn-row { margin-top: var(--s-4); }
+  .cal-top { margin-bottom: var(--s-5); }
+  .filter { min-height: 44px; padding: .3em .9em; }
+  .timeline { gap: var(--s-6); }
+  .mo-m { font-size: 2.4rem; }
+  .ev { padding: var(--s-4) var(--s-5); gap: var(--s-2); }
+  .ev h3 { font-size: var(--fs-md); }
+  .ev-when { margin-bottom: var(--s-2); }
+  .ev-poster { display: none; }
+  .ev-links .btn { min-height: 44px; }
+  /* 公益演出 */
+  .p-hero .breadcrumb, .p-hero .eyebrow, .p-hero-fig { display: none; }
+  .p-hero .lead { font-size: var(--fs-md); }
+  .prog-part { padding: var(--s-5); }
+  .prog-list li { padding: .5em 0; }
+  .hl { gap: var(--s-2); }
+  .hl-item { padding: var(--s-3) var(--s-4); }
+  .hl-ic { width: 44px; height: 44px; }
+  .pf.card { padding: var(--s-5); }
+  .past-feature .feature-poster { width: min(44%, 180px); }
+  /* 弦語童話 */
+  .cover-poster { width: min(52%, 200px); }
+  .c-cover h1 { font-size: 3rem; }
+  .cover-meta { margin: var(--s-4) 0; }
+  .c-part + .c-part { margin-top: var(--s-6); }
+  .c-pieces { gap: var(--s-2); }
+  .piece { padding: var(--s-3) var(--s-4); grid-template-columns: 2.4rem 1fr; }
+  .piece h4 { font-size: var(--fs-md); }
+  .piece-who { margin: 0; }
+  .piece-who span { display: inline; margin-left: .5em; }
+  .thanks { margin-top: var(--s-6); }
+}
+@media (max-width: 599px) {
+  .ev .ev-date { display: none; }
+  .ev-links { gap: 0 var(--s-3); align-items: center; }
+  .ev-links .btn-line { width: 100%; margin-bottom: var(--s-1); }
+  .ev-links .btn-ghost { border: 0; padding: .3em 0; min-height: 44px; background: none; color: var(--gold-dk); font-size: var(--fs-sm); }
+  .ev-links .btn-ghost:hover { transform: none; box-shadow: none; }
+}
+@media (max-width: 599px) {
+  .e-hero .lead-long { display: none; }
+  .e-hero .lead-short { display: block; }
+  .feature-poster { width: min(46%, 180px); }
+  .feature-when { padding: var(--s-3) 0; margin-bottom: var(--s-3); }
+}
+@media (max-width: 599px) {
+  .c-pieces { gap: 0; background: var(--paper); border: 1px solid var(--hair); border-radius: var(--r-lg); overflow: hidden; }
+  .piece { border: 0; border-radius: 0; box-shadow: none; border-top: 1px solid var(--hair); }
+  .piece:first-child { border-top: 0; }
+  .piece-more > summary { min-height: 40px; }
+  .prog-list .pw { font-size: .875rem; }
+}
+
+/* ── 第四輪：活動行事曆主視覺補上真實照片（老師穿演出服與金色踏板豎琴，RON_6288 上半） ── */
+@media (min-width: 900px) {
+  body:has(#h-feat) .e-hero { min-height: 34rem; }
+  body:has(#h-feat) .e-hero-in { z-index: 1; }
+  body:has(#h-feat) .e-hero-in > * { max-width: min(46rem, 52vw); }
+  body:has(#h-feat) .e-hero::after {
+    content: ""; position: absolute; z-index: 0; pointer-events: none;
+    right: max(var(--gutter), calc((100vw - var(--maxw)) / 2)); top: calc(var(--hd-h) + 2rem);
+    width: min(30vw, 380px); aspect-ratio: 4 / 5; border-radius: 220px 220px var(--r-lg) var(--r-lg);
+    background: image-set(url("/_r/static/img/concert-gown-w480.webp") 1x, url("/_r/static/img/concert-gown-w800.webp") 2x) 55% 20% / cover no-repeat;
+    box-shadow: var(--sh-3); outline: 1px solid rgba(230, 201, 135, .45); outline-offset: 14px;
+  }
+  body:has(#h-feat) .e-hero .hero-strings { opacity: .22; }
+}
+
+/* 11/29 節目單 v9：演出者（放在節目單區塊裡，深色底） */
+.crew-h { margin: var(--s-8) 0 var(--s-4); text-align: center; color: var(--gold-lt); font-size: var(--fs-xl); }
+.crew-1129 { position: relative; }
+.crew-note { margin: -.4em 0 var(--s-3); color: var(--on-dark-2); font-size: .875rem; line-height: 1.6; }
+.program-sec .crew-p span { color: var(--on-dark-2); }
+@media (max-width: 599px) { .crew-h { margin-top: var(--s-6); } }
+@media (min-width: 900px) { .crew-1129 { grid-template-columns: repeat(4, 1fr); } .crew-1129 .crew-g:nth-last-child(-n+2) { grid-column: span 2; } }

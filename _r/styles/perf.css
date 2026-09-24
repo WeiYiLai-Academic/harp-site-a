@@ -1,0 +1,11 @@
+/* 速度（perf/ 負責，只放不改變外觀的規則）─────────────────────────────
+   首屏以外的大區塊，在畫面外時先不排版、不繪製（content-visibility: auto）。
+   中文字第一次排版很貴（每一個字都要找字型、塑形，手機上一整頁要數百毫秒），
+   而且網頁字型換上時又要整頁重排一次；這樣兩次都只排看得到的那一段，捲到附近才排，畫面一模一樣。
+   contain-intrinsic-size 的 auto：排過一次就記住真實高度，捲軸不會亂跳。
+   自動化截圖（Playwright：navigator.webdriver）由 <head> 的小程式加上 html.no-cv 關掉，
+   不然整頁截圖時畫面外的區塊會是空白（瀏覽器還沒排它）。 */
+html:not(.no-cv) :is(main > section:not(:first-child), .en-root > section:not(:first-child), .art-layout, .art-end, .site-ft) {
+  content-visibility: auto;
+  contain-intrinsic-size: auto 900px;
+}

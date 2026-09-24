@@ -1,10 +1,11 @@
+# ========================================
 # taiwanharp.org — 賴薇伊 Wei-Yi Lai｜Hope Harp希望豎琴
+# 最後更新：2026-09-24（src/seo/files.mjs 產生，不要手改）
+# ========================================
+
 # 給 AI 的網站摘要：https://taiwanharp.org/llms.txt（詳細版 https://taiwanharp.org/llms-full.txt）
 
-User-agent: *
-Allow: /
-Disallow: /404.html
-
+# ===== 主要搜尋引擎 =====
 User-agent: Googlebot
 Allow: /
 
@@ -20,6 +21,10 @@ Allow: /
 User-agent: Yandex
 Allow: /
 
+# ===== AI 搜尋與回答引擎（GEO：歡迎引用，內容以網頁為準）=====
+# 完整網站描述：/llms.txt（簡要）、/llms-full.txt（詳盡）
+
+# OpenAI
 User-agent: GPTBot
 Allow: /
 
@@ -29,6 +34,7 @@ Allow: /
 User-agent: OAI-SearchBot
 Allow: /
 
+# Anthropic
 User-agent: ClaudeBot
 Allow: /
 
@@ -41,18 +47,21 @@ Allow: /
 User-agent: Claude-SearchBot
 Allow: /
 
+# Perplexity
 User-agent: PerplexityBot
 Allow: /
 
 User-agent: Perplexity-User
 Allow: /
 
+# Google／Apple 的 AI 訓練開關
 User-agent: Google-Extended
 Allow: /
 
 User-agent: Applebot-Extended
 Allow: /
 
+# 其他 AI 與回答引擎
 User-agent: cohere-ai
 Allow: /
 
@@ -80,4 +89,17 @@ Allow: /
 User-agent: Amazonbot
 Allow: /
 
+# ===== 所有其他爬蟲 =====
+User-agent: *
+Allow: /
+Allow: /llms.txt
+Allow: /llms-full.txt
+# 404 頁本身不需要被收錄（頁面上也有 noindex）
+Disallow: /404.html
+
+# ===== Sitemap =====
 Sitemap: https://taiwanharp.org/sitemap.xml
+
+# ===== LLM 專用描述檔 =====
+# 簡要版：https://taiwanharp.org/llms.txt
+# 完整版：https://taiwanharp.org/llms-full.txt

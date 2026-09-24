@@ -1,0 +1,127 @@
+/* 全站美術層（每一頁都載入，在 components.css 之後、頁面 CSS 之前 ⇒ 頁面可以再覆寫）。
+   「弦・光」節目冊質感：紙紋、弦紋裝飾線、統一的段落節奏、按下回饋、焦點樣式、跨頁轉場。
+   原則：只用 CSS 與極小的內嵌 SVG（無圖片檔）；所有動態都尊重 prefers-reduced-motion。 */
+
+:root {
+  /* 紙紋：160px 的 SVG 雜訊（暖褐色、極淡），平鋪在象牙與沙色底上 */
+  --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .42 0 0 0 0 .32 0 0 0 0 .18 0 0 0 .55 -.2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  /* 深色底用的：淡金色微粒 */
+  --grain-dk: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .9 0 0 0 0 .8 0 0 0 0 .55 0 0 0 .38 -.24'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  /* 弦紋裝飾：中間一組長短不一的弦（像豎琴的弦長），兩側細金線淡出 */
+  --orn: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='24' viewBox='0 0 240 24'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1'%3E%3Cstop offset='0' stop-color='%23C9A04E' stop-opacity='0'/%3E%3Cstop offset='.5' stop-color='%23C9A04E'/%3E%3Cstop offset='1' stop-color='%23C9A04E' stop-opacity='0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M0 12h96M144 12h96' stroke='url(%23g)' stroke-width='1'/%3E%3Cg stroke='%23C9A04E' stroke-linecap='round'%3E%3Cpath d='M104 4v16M110 6v12M116 8v8M122 9v6M128 10v4'/%3E%3Cpath d='M134 11v2' /%3E%3C/g%3E%3Ccircle cx='98' cy='12' r='1.6' fill='%23C9A04E'/%3E%3Ccircle cx='142' cy='12' r='1.6' fill='%23C9A04E'/%3E%3C/svg%3E");
+  /* 頁尾頂端：一排由長到短的弦 */
+  --strings-row: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='40' viewBox='0 0 240 40'%3E%3Cg stroke='%23E6C987' stroke-linecap='round' stroke-opacity='.5'%3E%3Cpath d='M24 2.0v36.0M40 2.4v33.6M56 2.8v31.2M72 3.2v28.8M88 3.6v26.4M104 4.0v24.0M120 4.4v21.6M136 4.8v19.2M152 5.2v16.8M168 5.6v14.4M184 6.0v12.0M200 6.4v9.6M216 6.8v7.2'/%3E%3C/g%3E%3Cpath d='M16 2 C80 -1 160 1 232 6' fill='none' stroke='%23C89B6D' stroke-opacity='.65' stroke-width='1.4'/%3E%3C/svg%3E");
+}
+
+/* ── 紙紋 ───────────────────────────── */
+body { background-color: var(--ivory); background-image: var(--grain); }
+.sand, .paper { background-image: var(--grain); }
+.dark { background-image: var(--grain-dk); }
+::selection { background: rgba(230, 201, 135, .5); color: var(--ink); }
+
+/* ── 裝飾線：兩段相同底色的段落之間放一條弦紋 ───────── */
+.section:not(.dark):not(.sand):not(.paper) + .section:not(.dark):not(.sand):not(.paper)::before,
+.divider-strings {
+  content: ""; display: block; width: 240px; height: 24px; margin: 0 auto;
+  background: var(--orn) center / contain no-repeat; opacity: .8;
+}
+.section:not(.dark):not(.sand):not(.paper) + .section:not(.dark):not(.sand):not(.paper)::before {
+  position: absolute; top: -12px; left: 50%; transform: translateX(-50%);
+}
+.divider-strings { height: 24px; background-color: transparent; }
+.sec-head.center h2::after { content: ""; display: block; width: 120px; height: 16px; margin: .5em auto 0; background: var(--orn) center / contain no-repeat; opacity: .7; }
+
+/* 頁尾頂端的一排弦 */
+.site-ft { position: relative; background-image: var(--grain-dk); }
+.site-ft::before { content: ""; position: absolute; top: 0; left: 50%; width: 240px; height: 40px; transform: translate(-50%, 0);
+  background: var(--strings-row) center / contain no-repeat; pointer-events: none; opacity: .9; }
+
+/* ── 段落節奏（手機收緊，全站一致；頁面 CSS 可覆寫） ── */
+@media (max-width: 599px) {
+  .section { padding-block: 3.5rem; }
+  .section-tight { padding-block: 2.5rem; }
+  .sec-head { margin-bottom: var(--s-5); }
+  .page-hero { padding: 2.25rem 0 1.75rem; }
+}
+.sec-head h2 { letter-spacing: .04em; }
+
+/* ── 圖片處理 ───────────────────────── */
+main figure { margin: 0; }
+main figure > img, main .card img { border-radius: var(--r-md); }
+
+/* ── 按下與停留的回饋 ─────────────────── */
+html { -webkit-tap-highlight-color: transparent; }
+.btn-gold { position: relative; overflow: hidden; isolation: isolate; }
+.btn:active { transform: translateY(0) scale(.97); box-shadow: none; transition-duration: .08s; }
+.btn-gold::after { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+  background: linear-gradient(105deg, transparent 35%, rgba(255, 255, 255, .45) 50%, transparent 65%); transform: translateX(-110%); }
+.btn-gold:hover::after { transform: translateX(110%); transition: transform .7s var(--ease); }
+.btn-line:active { background: #056028; }
+a.card:active, .k-card:active { transform: translateY(-1px) scale(.992); transition-duration: .08s; }
+.dock a { transition: color var(--t-fast), background var(--t-fast); }
+.dock a:active { background: rgba(14, 26, 43, .06); }
+.dock a.dock-line:active { background: #056028; }
+.nav a { position: relative; }
+.nav a::after { content: ""; position: absolute; left: .8em; right: .8em; bottom: .25em; height: 1.5px; background: var(--gold); border-radius: 1px;
+  transform: scaleX(0); transform-origin: left; transition: transform var(--t-med) var(--ease); }
+.nav a:hover::after, .nav a[aria-current]::after { transform: scaleX(1); }
+.nav a:hover { background: transparent; }
+
+/* ── 焦點樣式：金色圈，深色底上用亮金 ───────── */
+:focus-visible { outline: 2px solid var(--gold-dk); outline-offset: 3px; box-shadow: 0 0 0 6px rgba(201, 160, 78, .22); }
+.btn:focus-visible { outline-offset: 3px; }
+.dark :focus-visible, .site-ft :focus-visible, body.hd-dark .site-hd:not(.scrolled) :focus-visible { outline-color: var(--gold-lt); box-shadow: 0 0 0 6px rgba(230, 201, 135, .2); }
+
+/* ── 頁首：語言切換、深色首屏的頁面 ─────────── */
+.hd-lang { display: grid; place-items: center; min-width: 44px; height: 44px; padding: 0 .5em; border-radius: var(--r-pill);
+  font: 600 .95rem/1 var(--f-latin); letter-spacing: .08em; text-decoration: none; color: inherit; opacity: .85; }
+.hd-lang:hover { opacity: 1; background: var(--hair); }
+/* 頁面第一段是深色、但沒有設 hd-dark 的（例如商店）：頁首跟著變深，不要出現灰色半透明條 */
+body:not(.hd-dark):has(#main > .dark:first-child) .site-hd:not(.scrolled) { background: var(--ink); color: var(--on-dark); backdrop-filter: none; -webkit-backdrop-filter: none; }
+body:not(.hd-dark):has(#main > .dark:first-child) .site-hd:not(.scrolled) .nav a[aria-current] { color: var(--gold-lt); }
+
+/* ── 公告列（page.announcement；預設沒有） ─── */
+.announce { background: var(--ink); background-image: var(--grain-dk); color: var(--on-dark); font-size: var(--fs-sm); border-bottom: 1px solid rgba(230, 201, 135, .3); position: relative; z-index: 51; }
+.announce-in { display: flex; align-items: center; gap: var(--s-3); min-height: 44px; }
+.announce p { margin: 0; flex: 1; line-height: 1.5; padding-block: .4em; }
+.announce a { color: var(--gold-lt); font-weight: 700; }
+.announce-x { flex: none; display: grid; place-items: center; width: 44px; height: 44px; border: 0; background: none; color: var(--on-dark-2); border-radius: 50%; }
+.announce-x:hover { color: var(--on-dark); background: rgba(255, 255, 255, .08); }
+
+/* ── 頁尾：手機改兩欄，縮短長度 ─────────── */
+@media (max-width: 899px) {
+  .ft-grid { grid-template-columns: 1fr 1fr; gap: var(--s-5) var(--s-4); }
+  .ft-brand, .ft-contact { grid-column: 1 / -1; }
+  .site-ft { padding-top: var(--s-8); }
+  .ft-legal { margin-top: var(--s-6); }
+}
+
+/* ── 跨頁轉場（Chrome 126+；其他瀏覽器照常換頁） ─── */
+@media (prefers-reduced-motion: no-preference) {
+  @view-transition { navigation: auto; }
+  .site-hd { view-transition-name: site-hd; }
+  .dock { view-transition-name: dock; }
+  ::view-transition-old(root) { animation: vt-out .2s cubic-bezier(.4, 0, 1, 1) both; }
+  ::view-transition-new(root) { animation: vt-in .42s cubic-bezier(.22, .8, .24, 1) both; }
+  ::view-transition-group(site-hd), ::view-transition-group(dock) { animation-duration: .35s; }
+}
+@keyframes vt-out { to { opacity: 0; transform: translateY(-8px); } }
+@keyframes vt-in { from { opacity: 0; transform: translateY(14px); } }
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-gold::after { display: none; }
+  .nav a::after { transition: none; }
+}
+
+/* ── 英文頁（html lang="en"）：用西文字型，避免 ’ “ ” 被 Noto 排成全形；頁尾標題字距收小 ── */
+html[lang="en"] {
+  --f-sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans TC", sans-serif;
+  --f-serif: "Cormorant Garamond", Georgia, "Noto Serif TC", serif;
+}
+html[lang="en"] body { letter-spacing: .005em; }
+html[lang="en"] .site-ft .ft-h { letter-spacing: .06em; font-size: 1.15rem; font-weight: 600; }
+html[lang="en"] .nav a, html[lang="en"] .dock a { letter-spacing: .02em; }
+html[lang="en"] .logo-txt small { letter-spacing: .5em; font-family: "Noto Sans TC", sans-serif; }
+
+/* 頁尾欄位標題：固定小字（base 的 font 簡寫在某些頁被 h2 字級蓋過） */
+.site-ft .ft-h { font-family: var(--f-serif); font-size: 1rem; font-weight: 700; line-height: 1.3; letter-spacing: .16em; }

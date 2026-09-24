@@ -1,0 +1,64 @@
+/* Hope Harp 設計代幣 ─ 「弦與木」：夜空墨藍 × 象牙紙 × 撥弦金。
+   讀者多半是用手機看的家長與樂齡族 ⇒ 內文 18px 起跳、對比 ≥ 4.5、按鈕高度 ≥ 48px。 */
+:root {
+  /* 色彩 */
+  --ink: #0E1A2B;          /* 夜空墨藍：深色區塊底色、主要文字 */
+  --ink-2: #16263D;
+  --ink-3: #22364F;
+  --ivory: #F7F2E9;        /* 象牙紙：主要淺色底 */
+  --paper: #FFFDF8;        /* 卡片 */
+  --sand: #EDE4D3;         /* 次要底色、分隔 */
+  --gold: #C9A04E;         /* 撥弦金：只當裝飾與深底上的字 */
+  --gold-lt: #E6C987;      /* 深底上的強調字 */
+  --gold-dk: #805C1C;      /* 淺底上的金色字（對比 5:1） */
+  --wood: #8B5E3C;         /* 楓木 */
+  --wood-lt: #C89B6D;
+  --rose: #B4526A;         /* 限時優惠、提醒 */
+  --line-green: #06C755;   /* LINE 官方綠 */
+  --line-green-dk: #05A847;
+  --text: #1B2433;
+  --text-2: #4A5566;       /* 次要文字（對比 7:1 on ivory） */
+  --text-3: #5F6878;       /* 最淡，只用在說明（對比 5:1） */
+  --on-dark: #F4EEE2;
+  --on-dark-2: #BFC6D2;
+  --hair: rgba(14, 26, 43, .12);
+  --hair-dk: rgba(244, 238, 226, .14);
+
+  /* 字體 */
+  --f-serif: "Noto Serif TC", "Songti TC", serif;
+  --f-sans: "Noto Sans TC", "PingFang TC", "Microsoft JhengHei", system-ui, sans-serif;
+  --f-latin: "Cormorant Garamond", "Noto Serif TC", serif;
+
+  /* 字級（流體） */
+  --fs-xs: .875rem;
+  --fs-sm: 1rem;
+  --fs-md: 1.125rem;       /* 內文 18px */
+  --fs-lg: clamp(1.2rem, 1.1rem + .4vw, 1.375rem);
+  --fs-xl: clamp(1.5rem, 1.3rem + 1vw, 2rem);
+  --fs-2xl: clamp(1.9rem, 1.5rem + 2vw, 2.9rem);
+  --fs-3xl: clamp(2.3rem, 1.6rem + 3.6vw, 4.4rem);
+  --fs-hero: clamp(2.6rem, 1.6rem + 5vw, 5.6rem);
+
+  /* 間距 */
+  --s-1: .25rem; --s-2: .5rem; --s-3: .75rem; --s-4: 1rem; --s-5: 1.5rem;
+  --s-6: 2rem; --s-7: 3rem; --s-8: 4rem; --s-9: 6rem; --s-10: 8rem;
+  --section: clamp(4rem, 3rem + 5vw, 8rem);
+  --gutter: clamp(1rem, .6rem + 2vw, 2.5rem);
+  --maxw: 1200px;
+  --maxw-text: 42rem;
+
+  /* 形狀與陰影 */
+  --r-sm: 8px; --r-md: 14px; --r-lg: 22px; --r-xl: 32px; --r-pill: 999px;
+  --sh-1: 0 1px 2px rgba(14, 26, 43, .06), 0 2px 8px rgba(14, 26, 43, .05);
+  --sh-2: 0 6px 24px -6px rgba(14, 26, 43, .18), 0 2px 6px rgba(14, 26, 43, .06);
+  --sh-3: 0 24px 60px -18px rgba(14, 26, 43, .35);
+  --glow: 0 0 24px rgba(230, 201, 135, .45);
+
+  /* 動態 */
+  --ease: cubic-bezier(.22, .8, .24, 1);
+  --ease-spring: cubic-bezier(.34, 1.4, .5, 1);
+  --t-fast: .18s; --t-med: .38s; --t-slow: .8s;
+
+  --hd-h: 68px;
+  --dock-h: 64px;
+}

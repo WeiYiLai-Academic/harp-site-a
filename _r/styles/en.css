@@ -1,0 +1,100 @@
+/* English home (/en/). Builds on home.css (hero, model rail, course cards, teacher, videos, FAQ, final)
+   and the shared components; this file only adds English typography and the /en/-only blocks.
+   Colours: tokens.css variables only. */
+
+/* ── English typography: Latin display serif for headings, tighter tracking ── */
+.en-root { letter-spacing: .005em; }
+.en-root h1, .en-root h2 { font-family: var(--f-latin); font-weight: 600; letter-spacing: 0; line-height: 1.08; }
+.en-home .en-root h2 { font-size: clamp(2.1rem, 1.6rem + 2vw, 3.2rem); }
+.en-root h3 { letter-spacing: 0; }
+.en-root .eyebrow { letter-spacing: .14em; }
+.en-home .hero h1 { font-size: clamp(2.7rem, 1.6rem + 5vw, 5.4rem); line-height: 1.04; letter-spacing: -.005em; }
+.en-root .ph-audio { letter-spacing: .03em; }
+.en-home .hero h1 em { font-style: italic; font-weight: 500; }
+.en-root .hero-sub { letter-spacing: 0; }
+.zh-tag { font-size: max(.85em, 14px); font-weight: 400; color: var(--text-3); white-space: nowrap; }
+.dark .zh-tag { color: var(--on-dark-2); }
+.en-zh { font-family: var(--f-serif); font-size: .5em; font-weight: 500; color: var(--gold-dk); letter-spacing: .1em; margin-left: .3em; vertical-align: .35em; }
+
+/* ── Models ── */
+.en-root .hm-name { display: flex; flex-direction: column; }
+.en-kind { font-family: var(--f-latin); font-style: italic; font-weight: 500; font-size: 1.25rem; color: var(--text-2); line-height: 1.2; }
+.en-root .hm-meta, .en-root .hm-for { line-height: 1.5; }
+.en-root .hm-price .price-was { font-size: var(--fs-sm); }
+.en-note { line-height: 1.7; }
+.en-note b { color: var(--text); }
+.en-note a { color: var(--gold-dk); font-weight: 700; }
+
+/* ── Lessons ── */
+.en-lessons { background: linear-gradient(180deg, var(--sand), var(--ivory) 60%); }
+.en-lesson {
+  position: relative; display: grid; gap: var(--s-4); padding: var(--s-5); margin-bottom: var(--s-4);
+  background: var(--ink); color: var(--on-dark); border-radius: var(--r-lg); box-shadow: var(--sh-3); overflow: hidden; isolation: isolate;
+}
+.en-lesson::before { content: ""; position: absolute; inset: 0; z-index: -1; pointer-events: none;
+  background: radial-gradient(70% 90% at 100% 0%, rgba(201, 160, 78, .2), transparent 70%),
+    repeating-linear-gradient(90deg, transparent 0 22px, rgba(230, 201, 135, .06) 22px 23px); }
+.en-lesson .eyebrow { color: var(--gold-lt); margin-bottom: var(--s-1); }
+.en-lesson h3 { color: var(--on-dark); font-size: var(--fs-xl); margin: 0 0 .3em; }
+.en-lesson-main p { color: var(--on-dark-2); font-size: var(--fs-sm); line-height: 1.7; margin: 0 0 var(--s-3); }
+.en-facts { list-style: none; padding: 0; margin: 0; display: grid; gap: .35em; font-size: var(--fs-sm); }
+.en-facts li { display: flex; align-items: center; gap: .5em; color: var(--on-dark); }
+.en-facts .ic { color: var(--gold-lt); }
+.en-lesson-buy { display: grid; gap: var(--s-2); padding-top: var(--s-4); border-top: 1px solid var(--hair-dk); }
+.en-lesson-price { display: flex; align-items: baseline; flex-wrap: wrap; gap: .1em .5em; margin: 0; }
+.en-lesson-price .price { font-size: clamp(1.9rem, 1.6rem + 1vw, 2.4rem); color: var(--gold-lt); }
+.en-lesson-price small, .en-lesson-sub { color: var(--on-dark-2); font-size: var(--fs-sm); }
+.en-lesson-price { margin-bottom: var(--s-2); }
+.en-lesson .link-arrow { min-height: 44px; color: var(--on-dark); justify-self: start; }
+@media (min-width: 900px) {
+  .en-lesson { grid-template-columns: 1.5fr 1fr; gap: var(--s-7); padding: var(--s-7); align-items: center; }
+  .en-lesson-buy { padding: 0 0 0 var(--s-6); border-top: 0; border-left: 1px solid var(--hair-dk); }
+}
+
+.en-prog { display: grid; gap: var(--s-4); }
+@media (min-width: 900px) { .en-prog { grid-template-columns: 1fr 1fr; } }
+.en-prog .co-card .link-arrow { min-height: 44px; margin-top: var(--s-2); justify-self: start; align-self: flex-start; }
+.en-prog .co-card h3 { font-size: var(--fs-lg); }
+.en-prog .co-promise b { color: var(--text); font-weight: 700; white-space: nowrap; }
+.en-small { font-size: var(--fs-xs); color: var(--text-2); line-height: 1.65; margin: 0 0 var(--s-3); padding-left: var(--s-3); border-left: 2px solid var(--wood-lt); }
+.en-small b { color: var(--text); }
+.en-prog .co-price { flex-wrap: wrap; }
+.en-dates { list-style: none; padding: 0; margin: 0 0 var(--s-3); display: grid; gap: 4px; }
+.en-dates li { display: grid; grid-template-columns: 7.2rem 1fr; gap: var(--s-2); align-items: baseline; padding: .3em .8em; border-radius: var(--r-sm); background: var(--ivory); font-size: var(--fs-sm); }
+.en-dates b { font-family: var(--f-serif); }
+.en-dates span { color: var(--text-2); }
+
+/* ── About ── */
+.en-research { font-size: var(--fs-sm); color: var(--text-2); margin: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 0 .45em; }
+.en-research a { color: var(--gold-dk); font-weight: 700; min-height: 44px; display: inline-flex; align-items: center; }
+@media (min-width: 900px) { .en-research { grid-column: 2 / -1 !important; justify-self: start !important; } }
+
+/* ── FAQ ── */
+.en-root .faq summary { font-family: var(--f-sans); font-weight: 700; letter-spacing: 0; line-height: 1.5; }
+
+/* ── Contact ── */
+.en-ways { list-style: none; padding: 0; margin: var(--s-5) 0 0; display: grid; gap: 0; max-width: 40rem; border-top: 1px solid var(--hair-dk); }
+.en-ways li { display: grid; grid-template-columns: 18px 10.5rem 1fr; gap: var(--s-3); align-items: center; padding: .55em 0; border-bottom: 1px solid var(--hair-dk); font-size: var(--fs-sm); }
+.en-ways .ic { color: var(--gold-lt); }
+.en-ways span { color: var(--on-dark-2); }
+.en-ways a { color: var(--on-dark); font-weight: 700; text-decoration: none; min-height: 44px; display: inline-flex; align-items: center; overflow-wrap: anywhere; }
+.en-ways a:hover { color: var(--gold-lt); text-decoration: underline; }
+@media (max-width: 560px) {
+  .en-ways li { grid-template-columns: 18px 1fr; gap: 0 var(--s-3); }
+  .en-ways span { grid-column: 2; font-size: var(--fs-xs); line-height: 1.3; padding-top: .3em; }
+  .en-ways a { grid-column: 2; }
+  .en-ways .ic { grid-row: 1 / span 2; align-self: center; }
+}
+.en-zhsite { margin: var(--s-4) 0 0; font-size: var(--fs-sm); color: var(--on-dark-2); }
+.en-zhsite a { color: var(--gold-lt); font-weight: 700; }
+
+/* ── Mobile rhythm: a little tighter than the Chinese home (English runs longer per line) ── */
+@media (max-width: 600px) {
+  .en-home .section-tight, .en-home .lineup { padding-block: 2.25rem; }
+  .en-home .sec-head { margin-bottom: var(--s-4); }
+  .en-home .final { padding-block: 2.5rem; }
+}
+
+/* ── Patents (titles only — not tied to any model) ── */
+.en-patents { list-style: none; margin: 0; padding: 0; display: grid; gap: .3em; font-size: var(--fs-sm); color: var(--text-2); line-height: 1.6; }
+.en-patents a { color: var(--gold-dk); font-style: normal; font-weight: 600; }

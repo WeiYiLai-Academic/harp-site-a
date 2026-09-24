@@ -1,0 +1,111 @@
+/* 共用元件（每一頁都有載入；由首頁 agent 維護）。要用的頁面直接用這些 class，不要再各寫一份。
+   互動部分在 /_r/js/components.js（頁面要把它放進 scripts）。
+
+   1. 橫向捲動軌道 .rail  ＋ 左右箭頭 .rail-btn ＋ 進度條 .rail-bar
+      <div data-rail-root>                         ← 箭頭、進度條、軌道只要在同一個 root 裡就會自動接上
+        <div class="rail-nav"><button class="rail-btn" data-rail-prev aria-label="上一個">…</button>
+                              <button class="rail-btn" data-rail-next aria-label="下一個">…</button></div>
+        <div class="rail" data-rail tabindex="0" role="region" aria-label="…">  <article>…</article> … </div>
+        <div class="wrap"><div class="rail-bar"><i data-rail-bar></i></div></div>
+      </div>
+      - 軌道左右會對齊 .wrap 的內容邊（頁面兩側照樣可以滑出去），項目寬度用 --rail-item 調（預設 min(78vw, 340px)）
+      - .rail-free：不強制對齊（書、晶片列這種小東西）；.rail-tight：項目間距小一點
+      - .rail-nav 手機上自動隱藏（手機用手指滑），≥ 900px 才出現
+   2. .btn.added            加入購物車之後的「已加入」狀態
+   3. .tel-link             小的電話連結（圖示＋「或來電 0931-…」）
+   4. .price-ask            「費用洽詢」用的價格字（和 .price 並排時高度一致）
+   5. YouTube 點了才載入：<button class="yt" type="button" data-yt="影片ID" data-title="標題" aria-label="播放影片：標題">
+                            <img src="https://i.ytimg.com/vi/ID/hqdefault.jpg" width="480" height="360" alt="" loading="lazy" decoding="async">
+                            <span class="yt-play">…play 圖示…</span></button>
+      另一個按鈕加 data-yt-into="#某個 .yt 的 id" ⇒ 點它會在那一格播放該影片（精選＋清單用）。 */
+
+/* ── 1. 橫向捲動軌道 ───────────────────── */
+.rail {
+  --rail-pad: max(var(--gutter), (100vw - var(--maxw)) / 2);
+  display: flex; gap: var(--rail-gap, var(--s-5)); overflow-x: auto; overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory; scroll-padding-inline: var(--rail-pad);
+  padding: var(--s-2) var(--rail-pad) var(--s-5); scrollbar-width: none;
+}
+.rail::-webkit-scrollbar { display: none; }
+.rail > * { flex: 0 0 var(--rail-item, min(78vw, 340px)); scroll-snap-align: start; min-width: 0; }
+.rail:focus-visible { outline-offset: -3px; }
+.rail-free { scroll-snap-type: x proximity; }
+.rail-tight { --rail-gap: var(--s-3); }
+.rail-nav { display: none; gap: var(--s-3); }
+@media (min-width: 900px) { .rail-nav { display: flex; } }
+.rail-btn {
+  display: grid; place-items: center; width: 52px; height: 52px; border-radius: 50%; border: 1px solid var(--hair);
+  background: var(--paper); color: var(--text); box-shadow: var(--sh-1); cursor: pointer;
+  transition: transform var(--t-fast) var(--ease), background var(--t-fast), color var(--t-fast), opacity var(--t-fast);
+}
+.rail-btn:hover:not(:disabled) { background: var(--ink); color: var(--on-dark); transform: translateY(-2px); }
+.rail-btn:disabled { opacity: .35; cursor: default; }
+.dark .rail-btn { background: var(--ink-2); color: var(--on-dark); border-color: var(--hair-dk); }
+.dark .rail-btn:hover:not(:disabled) { background: var(--gold); color: var(--ink); }
+.rail-bar { height: 2px; background: var(--hair); border-radius: 2px; overflow: hidden; }
+.rail-bar i { display: block; height: 100%; width: 30%; background: linear-gradient(90deg, var(--gold), var(--wood)); border-radius: 2px; }
+.dark .rail-bar { background: var(--hair-dk); }
+
+/* ── 2–4. 小元件 ───────────────────────── */
+.btn.added { --bg: var(--ink); --fg: var(--gold-lt); background: var(--ink); color: var(--gold-lt); }
+.dark .btn.added { --bg: var(--gold-lt); --fg: var(--ink); background: var(--gold-lt); color: var(--ink); }
+.tel-link { display: inline-flex; align-items: center; gap: .35em; min-height: 44px; color: var(--text-2); text-decoration: none; font-size: var(--fs-sm); }
+.tel-link:hover { color: var(--text); text-decoration: underline; }
+.dark .tel-link { color: var(--on-dark-2); }
+.dark .tel-link:hover { color: var(--on-dark); }
+.price-ask { font-family: var(--f-serif); font-weight: 700; font-size: 1.35rem; line-height: 1.2; letter-spacing: .04em; }
+
+/* ── 5. YouTube 點了才載入 ─────────────── */
+.yt, .yt-frame { position: relative; display: block; width: 100%; aspect-ratio: 16 / 9; border: 0; padding: 0; margin: 0; border-radius: var(--r-md); overflow: hidden; background: var(--ink-3); cursor: pointer; }
+.yt img { width: 100%; height: 100%; object-fit: cover; opacity: .88; transition: transform var(--t-slow) var(--ease), opacity var(--t-med); }
+.yt:hover img { transform: scale(1.04); opacity: 1; }
+.yt-play { position: absolute; left: 50%; top: 50%; width: 64px; height: 64px; transform: translate(-50%, -50%); display: grid; place-items: center; border-radius: 50%;
+  background: rgba(14, 26, 43, .62); color: var(--gold-lt); border: 1px solid rgba(230, 201, 135, .6); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px);
+  transition: background var(--t-fast), color var(--t-fast); }
+.yt:hover .yt-play { background: var(--gold); color: var(--ink); }
+.yt-sm .yt-play { width: 44px; height: 44px; }
+
+/* ── 6. 固定預約列 .book-bar（課程頁、文章頁共用；顯示邏輯在各頁 JS：主視覺捲走才出現、看到頁尾就收起） ── */
+.book-bar { position: fixed; left: 0; right: 0; bottom: calc(var(--dock-h) + env(safe-area-inset-bottom)); z-index: 44;
+  background: color-mix(in srgb, var(--ink) 94%, transparent); color: var(--on-dark); border-top: 1px solid rgba(230, 201, 135, .35);
+  backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); box-shadow: 0 -10px 30px -12px rgba(14, 26, 43, .5);
+  transform: translateY(110%); opacity: 0; pointer-events: none; transition: transform var(--t-med) var(--ease), opacity var(--t-med); }
+.book-bar.on { transform: none; opacity: 1; pointer-events: auto; }
+.book-bar[hidden] { display: none; }
+.book-in { display: flex; align-items: center; justify-content: space-between; gap: var(--s-3); padding-block: .55rem; }
+.book-txt { margin: 0; display: flex; flex-direction: column; min-width: 0; line-height: 1.35; }
+.book-txt b { font-family: var(--f-serif); font-size: var(--fs-sm); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.book-txt span { font-size: .875rem; color: var(--gold-lt); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-variant-numeric: lining-nums; }
+.book-bar .btn { flex: none; min-height: 48px; padding-inline: 1.1em; }
+@media (min-width: 1080px) { .book-bar { bottom: 0; } .book-in { padding-block: .7rem; } .book-txt { flex-direction: row; align-items: baseline; gap: 1em; } .book-txt b { font-size: var(--fs-md); } .book-txt span { font-size: var(--fs-sm); } }
+body.bookbar-on .site-ft { padding-bottom: calc(var(--dock-h) + 80px); }
+.book-acts { display: flex; gap: var(--s-2); flex: none; }
+.book-bar .btn-ic { width: 48px; padding: 0; }
+
+/* ── 7. 專利號 .pat：Cormorant 的大寫 I 看起來像數字 1（「1903394」），專利號一律用無襯線、等高數字 ── */
+.pat { font-family: var(--f-sans) !important; font-style: normal; font-weight: 500; font-variant-numeric: lining-nums; letter-spacing: .03em; }
+
+/* ── 8. 手指可點範圍（年長讀者）：箭頭連結、麵包屑至少 44px 高，不改字級 ── */
+a.link-arrow { min-height: 44px; }
+.breadcrumb a { display: inline-block; padding-block: .75em; margin-block: -.75em; }
+
+/* ── 9. 中文排版：段落最後一行不要只剩一兩個字（「名。」「楚。」）；標題在 base.css 已經 balance ── */
+p, li, dd, figcaption, .lead { text-wrap: pretty; }
+
+/* ── 10. 小手機（≤ 400 寬：iPhone SE、小 Android）──────────────
+   9/24 多機型檢查：頁首的「Hope Harp」會被 EN／購物車／選單擠成兩行 ⇒ 標誌縮小、間距收緊，文字不換行 */
+@media (max-width: 400px) {
+  .hd-row { gap: var(--s-2); }
+  .logo { gap: .4em; }
+  .logo-mark { width: 28px; height: 28px; }
+  .logo-txt b { font-size: 1.12rem; white-space: nowrap; }
+  .logo-txt small { font-size: .66rem; letter-spacing: .38em; white-space: nowrap; }
+  .hd-act { gap: 0; }
+  .hd-lang { padding-inline: .45em; }
+}
+
+/* ── 11. 手機點擊範圍補到 44px（9/24 全站實測的提醒）──────────────
+   商品名稱文字連結（93×21）、FAQ 類的 summary（40 高）、.btn-sm（42 高）：外觀不變，只把可點範圍撐大 */
+.pc-name a { display: inline-block; padding-block: .7em; margin-block: -.7em; }
+details > summary { min-height: 44px; }
+.btn-sm { min-height: 44px; }
