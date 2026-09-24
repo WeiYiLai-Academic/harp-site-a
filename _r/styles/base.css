@@ -93,7 +93,7 @@ a.card:hover { transform: translateY(-4px); box-shadow: var(--sh-3); }
   font-size: var(--fs-xs); font-weight: 700; letter-spacing: .06em; background: var(--sand); color: var(--text-2);
 }
 .chip-gold { background: rgba(201, 160, 78, .16); color: var(--gold-dk); }
-.chip-rose { background: rgba(180, 82, 106, .12); color: var(--rose); }
+.chip-rose { background: rgba(180, 82, 106, .12); color: #9E4058; } /* 9/24 PageSpeed：--rose 在淡粉底上只有 4.0:1，小字要 4.5 ⇒ 深一階 5.3:1 */
 .dark .chip { background: rgba(244, 238, 226, .08); color: var(--on-dark-2); }
 .price { font-family: var(--f-latin); font-weight: 600; font-size: 1.6em; letter-spacing: .01em; line-height: 1; }
 .price small { font-family: var(--f-sans); font-size: .5em; font-weight: 500; margin-right: .2em; }
