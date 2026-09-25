@@ -287,6 +287,37 @@
     if (CAT[h]) filter(h, { scroll: !first, hash: false });
   }
   addEventListener('hashchange', () => fromHash(false));
+
+  // ── 即時資料（cart.js 從後台抓到、已經檢查過數字與網址）⇒ 蓋過卡片與詳細頁的底稿 ──
+  // 文字一律 esc／keep 後才放進 HTML；後台下架的整張卡藏起來、賣完的按鈕換成 LINE 詢問。
+  addEventListener('hh-live', () => {
+    for (const [sku, p] of Object.entries(P)) {
+      const c = Cart && Cart.catalog(sku); if (!c) continue;
+      const el = d.getElementById('p-' + sku);
+      if (c.gone) { if (el) el.hidden = true; p.canBuy = false; continue; }
+      const L = c.live || {};
+      p.name = c.n; p.price = c.p; p.listPrice = c.lp || null;
+      if (L.summary) p.summary = L.summary;
+      p.stock = c.st != null ? c.st : null;
+      if (c.ok === false || c.st === 0) p.canBuy = false;
+      // 照片：有顏色名稱的豎琴照（建置時對好顏色）保留底稿；其他商品照後台的順序
+      if (L.images && L.images.length && !colored(p)) p.pics = L.images.map((src) => ({ src, t: src, c: '' }));
+      if (!el) continue;
+      const nm = $('.pc-name a', el); if (nm) nm.innerHTML = keep(p.name);
+      const pr = $('.pc-price', el);
+      if (pr) pr.innerHTML = `<span class="price"><small>NT$</small>${Number(p.price).toLocaleString('en-US')}</span>${p.listPrice ? `<s class="price-was">${ntd(p.listPrice)}</s>` : ''}`;
+      const sm = $('.pc-sum', el); if (sm && L.summary) sm.innerHTML = keep(L.summary);
+      const im = $('.pc-pic img', el); if (im && p.pics[0] && !colored(p) && im.getAttribute('src') !== p.pics[0].src) im.src = p.pics[0].src;
+      const add = $('[data-add]', el);
+      if (add && !p.canBuy) {
+        const a = d.createElement('a');
+        a.className = 'btn btn-line pc-add'; a.href = DATA.line; a.rel = 'noopener';
+        a.innerHTML = IC.line + (c.st === 0 ? '已售完・用 LINE 詢問' : '用 LINE 詢問');
+        add.replaceWith(a);
+      }
+    }
+    // 詳細頁如果已經開著就不重畫（客人可能正在選顏色、調數量）；下次打開就是新資料
+  });
   // 瀏覽器的預設錨點跳躍會被黏住的分類列蓋住；等版面穩定再處理一次
   if (location.hash) {
     if ('scrollRestoration' in history) history.scrollRestoration = 'manual';

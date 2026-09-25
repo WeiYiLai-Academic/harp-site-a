@@ -82,6 +82,59 @@
     return loading;
   };
   const cat = (sku) => (shop && shop.catalog && shop.catalog[sku]) || null;
+
+  // ── 即時資料（2026-09-25）：老師在後台改的價格、原價、名稱、上下架、庫存、照片，不必等我們重建網站 ──
+  // 建置時的目錄仍是底稿（沒網路、後台掛掉時照樣能看、能加入購物車）；這裡只「蓋過」底稿，失敗就安靜地維持底稿。
+  // 🔒 後台回來的東西一律當外部資料：數字要是有限正數、文字截長度且只經 textContent／esc 放進畫面、
+  //    圖片只收 https 而且網域在白名單（官網自己的 /img 與後台 /uploads），回應怪怪的（商品太少、格式不對）整份不用。
+  //    結帳本來就由後端用資料庫價格重算，這一層只影響「畫面上看到的數字」。
+  let live = null;
+  const okNum = (v) => { const n = Number(v); return Number.isFinite(n) && n > 0 && n < 10000000 ? n : null; };
+  const okText = (v, max) => (typeof v === 'string' && v.trim() ? v.trim().slice(0, max) : null);
+  const imgHosts = () => {
+    const h = new Set([location.host, 'taiwanharp.org', 'www.taiwanharp.org']);
+    try { h.add(new URL(shop.api).host); } catch {}
+    return h;
+  };
+  // 後台上傳的照片回來是 /uploads/xxx（相對於後台那一台，不是官網）
+  const okImg = (u) => { try { const x = new URL(String(u), String(u).startsWith('/uploads/') ? shop.api : location.href); return x.protocol === 'https:' && imgHosts().has(x.host) ? x.href : null; } catch { return null; } };
+  const loadLive = () => {
+    if (live) return live;
+    live = loadShop().then(async (s) => {
+      const api = s && s.api ? String(s.api).replace(/\/$/, '') : '';
+      if (!api || !s.catalog || typeof fetch !== 'function') return null;
+      const ctl = typeof AbortController === 'function' ? new AbortController() : null;
+      const t = setTimeout(() => ctl && ctl.abort(), 6000);
+      let j = null;
+      try { const r = await fetch(api + '/api/products', { credentials: 'omit', cache: 'no-store', ...(ctl ? { signal: ctl.signal } : {}) }); if (r.ok) j = await r.json(); } catch {}
+      clearTimeout(t);
+      // 保險絲：少於底稿一半 ⇒ 可能是後台壞掉或被清空，不要因此把整個商店變成「已下架」
+      if (!j || !Array.isArray(j.products) || j.products.length < Object.keys(s.catalog).length / 2) return null;
+      const got = new Map();
+      for (const p of j.products) if (p && typeof p.sku === 'string') got.set(p.sku, p);
+      for (const [sku, c] of Object.entries(s.catalog)) {
+        const p = got.get(sku);
+        if (!p) { c.ok = false; c.gone = 1; continue; } // 後台下架
+        const price = okNum(p.price); if (price) c.p = price;
+        const lp = okNum(p.listPrice); if (lp && price && lp > price) c.lp = lp; else delete c.lp;
+        const n = okText(p.name, 160); if (n) c.n = n;
+        if (p.stock == null) delete c.st; else if (Number.isInteger(p.stock) && p.stock >= 0) c.st = p.stock;
+        if (p.shipping && p.shipping.ok === false) c.ok = false;
+        const img = Array.isArray(p.images) && p.images.length ? okImg(p.images[0]) : null;
+        if (img && !/\/img\/harps\//.test(c.i || '')) c.i = img; // 豎琴縮圖是分顏色裁過的，保留底稿
+        c.live = { summary: okText(p.summary, 600), images: (Array.isArray(p.images) ? p.images.map(okImg).filter(Boolean) : []).slice(0, 30), img };
+      }
+      if (j.rules && typeof j.rules === 'object') {
+        const R = s.rules || (s.rules = {});
+        const f = okNum(j.rules.bookFee); if (f || j.rules.bookFee === 0) R.bookFee = f || 0;
+        if (j.rules.bookFreeOver === null) R.bookFreeOver = null; else { const o = okNum(j.rules.bookFreeOver); if (o) R.bookFreeOver = o; }
+      }
+      refresh(); paint();
+      dispatchEvent(new CustomEvent('hh-live', { detail: { skus: [...got.keys()] } }));
+      return s;
+    });
+    return live;
+  };
   const itemFrom = (sku, c) => ({ sku, name: c.n, price: c.p, qty: 0, book: !!c.b, home: !!c.h, digital: c.k === 'digital', ...(c.i ? { img: c.i } : {}) });
   const maxOf = (sku) => { const p = cat(sku); return p && p.st != null ? Math.min(99, p.st) : 99; };
 
@@ -385,6 +438,7 @@ body.hhc-lock{overflow:hidden}
   function open() {
     mount(); refresh(); paint();
     loadShop().then(() => { refresh(); paint(); });
+    loadLive();
     if (!panel.hidden) return;
     lastFocus = d.activeElement;
     back.hidden = false; panel.hidden = false;
@@ -432,13 +486,15 @@ body.hhc-lock{overflow:hidden}
   addEventListener('hashchange', onHash);
   addEventListener('storage', (e) => { if (e.key === KEY) paint(); });
 
-  window.HHCart = { add, remove, set, items, count, open, close, suggest, checkoutForm, totals: () => totals(), justPaid, ready: loadShop, catalog: (sku) => cat(sku) };
+  window.HHCart = { add, remove, set, items, count, open, close, suggest, checkoutForm, totals: () => totals(), justPaid, ready: loadShop, live: loadLive, catalog: (sku) => cat(sku) };
 
   const init = () => {
     mount();
     toastEl.addEventListener('pointerenter', toastHold);
     toastEl.addEventListener('pointerleave', () => { toastTimer = setTimeout(hideToast, 2000); });
     refresh();
+    // 商店頁、或車裡已經有東西 ⇒ 抓一次即時資料（其他頁不必每次都打後台）
+    if (d.querySelector('#hh-shop-data') || read().length) loadLive();
     if (justPaid) dispatchEvent(new Event('hh-cart'));
     onHash();
   };
