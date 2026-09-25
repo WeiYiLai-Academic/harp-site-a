@@ -1,6 +1,6 @@
 # ========================================
 # taiwanharp.org — 賴薇伊 Wei-Yi Lai｜Hope Harp希望豎琴
-# 最後更新：2026-09-24（src/seo/files.mjs 產生，不要手改）
+# 最後更新：2026-09-25（src/seo/files.mjs 產生，不要手改）
 # ========================================
 
 # 給 AI 的網站摘要：https://taiwanharp.org/llms.txt（詳細版 https://taiwanharp.org/llms-full.txt）
