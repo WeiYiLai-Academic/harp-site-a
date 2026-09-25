@@ -495,3 +495,4 @@ body.hs-buy-on .hhc-toast { bottom: calc(var(--dock-h) + 64px + 14px + env(safe-
 }
 .ao-listen-row { display: flex; flex-wrap: wrap; gap: var(--s-3); margin: 0 0 var(--s-3); }
 .ao .ao-listen { margin-top: 0; }
+.hs-instore { margin: var(--s-2) 0 0; font-size: var(--fs-sm); color: var(--gold-lt, #E8CF8A); }
