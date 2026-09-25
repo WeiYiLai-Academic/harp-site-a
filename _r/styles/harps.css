@@ -481,3 +481,15 @@ body.hs-buy-on .hhc-toast { bottom: calc(var(--dock-h) + 64px + 14px + env(safe-
   .hs { --ah: min(30svh, 230px); }
 }
 .an-set .an-li .xv-v.tbd { color: var(--on-dark-2); font-size: var(--fs-sm); }
+
+/* Aoyama 踏板豎琴（代理）＋維修・估價・代售 */
+.ao { display: grid; grid-template-columns: 160px minmax(0, 1fr); gap: var(--s-5); align-items: center; margin-top: var(--s-6); padding: var(--s-5); }
+.ao-img { width: 160px; height: 213px; object-fit: cover; border-radius: var(--r-md); }
+.ao-body h3 { font-family: var(--f-serif); font-size: var(--fs-xl); margin: .2em 0 .4em; }
+.ao-body p { margin: 0 0 .7em; }
+.ao-act { display: flex; flex-wrap: wrap; gap: var(--s-3); margin-top: var(--s-3); }
+@media (max-width: 640px) {
+  .ao { grid-template-columns: minmax(0, 1fr); padding: var(--s-4); }
+  .ao-img { width: 100%; height: auto; aspect-ratio: 3 / 4; max-width: 240px; margin: 0 auto; }
+  .ao-act .btn { width: 100%; justify-content: center; white-space: normal; text-align: center; min-height: 52px; height: auto; padding-block: .6em; }
+}
