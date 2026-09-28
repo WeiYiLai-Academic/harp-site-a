@@ -45,6 +45,10 @@
 .ab-patents small { grid-column: 1; font-size: var(--fs-xs); color: var(--text-3); }
 .ab-patents b { grid-column: 1; font: 600 1.7rem/1.1 var(--f-latin); letter-spacing: .04em; }
 .ab-patents .ic { grid-column: 2; grid-row: 1 / 3; color: var(--gold-dk); }
+/* 9/28 老師：專利只放標題／大綱、細節不公開 ⇒ 卡片不再連到專利全文 */
+.ab-patents > div { display: grid; gap: .25em; padding: var(--s-4) var(--s-5); border-radius: var(--r-md); background: var(--paper); border: 1px solid var(--hair); }
+.ab-patents > div span { font-size: var(--fs-sm); color: var(--text-2); line-height: 1.5; }
+.ab-oldpat { margin: calc(-1 * var(--s-4)) 0 var(--s-6); font-size: var(--fs-sm); color: var(--text-3); }
 
 .ab-roles .card h3 { font-size: var(--fs-lg); }
 .ab-roles .card p { color: var(--text-2); font-size: var(--fs-sm); margin: 0; }
