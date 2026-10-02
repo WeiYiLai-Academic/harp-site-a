@@ -1,16 +1,14 @@
 /* 全站美術層（每一頁都載入，在 components.css 之後、頁面 CSS 之前 ⇒ 頁面可以再覆寫）。
    「弦・光」節目冊質感：紙紋、弦紋裝飾線、統一的段落節奏、按下回饋、焦點樣式、跨頁轉場。
-   原則：只用 CSS 與極小的內嵌 SVG（無圖片檔）；所有動態都尊重 prefers-reduced-motion。 */
+   原則：只用 CSS 與極小的內嵌 SVG；唯一的圖片檔是品牌商標 /img/brand/hope-trademark.png（10/1 老師要求）；所有動態都尊重 prefers-reduced-motion。 */
 
 :root {
   /* 紙紋：160px 的 SVG 雜訊（暖褐色、極淡），平鋪在象牙與沙色底上 */
   --grain: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='160' height='160'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .42 0 0 0 0 .32 0 0 0 0 .18 0 0 0 .55 -.2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
   /* 深色底用的：淡金色微粒 */
   --grain-dk: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .9 0 0 0 0 .8 0 0 0 0 .55 0 0 0 .38 -.24'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-  /* 弦紋裝飾：中間一組長短不一的弦（像豎琴的弦長），兩側細金線淡出 */
-  --orn: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='24' viewBox='0 0 240 24'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1'%3E%3Cstop offset='0' stop-color='%23C9A04E' stop-opacity='0'/%3E%3Cstop offset='.5' stop-color='%23C9A04E'/%3E%3Cstop offset='1' stop-color='%23C9A04E' stop-opacity='0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M0 12h96M144 12h96' stroke='url(%23g)' stroke-width='1'/%3E%3Cg stroke='%23C9A04E' stroke-linecap='round'%3E%3Cpath d='M104 4v16M110 6v12M116 8v8M122 9v6M128 10v4'/%3E%3Cpath d='M134 11v2' /%3E%3C/g%3E%3Ccircle cx='98' cy='12' r='1.6' fill='%23C9A04E'/%3E%3Ccircle cx='142' cy='12' r='1.6' fill='%23C9A04E'/%3E%3C/svg%3E");
-  /* 頁尾頂端：一排由長到短的弦 */
-  --strings-row: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='40' viewBox='0 0 240 40'%3E%3Cg stroke='%23E6C987' stroke-linecap='round' stroke-opacity='.5'%3E%3Cpath d='M24 2.0v36.0M40 2.4v33.6M56 2.8v31.2M72 3.2v28.8M88 3.6v26.4M104 4.0v24.0M120 4.4v21.6M136 4.8v19.2M152 5.2v16.8M168 5.6v14.4M184 6.0v12.0M200 6.4v9.6M216 6.8v7.2'/%3E%3C/g%3E%3Cpath d='M16 2 C80 -1 160 1 232 6' fill='none' stroke='%23C89B6D' stroke-opacity='.65' stroke-width='1.4'/%3E%3C/svg%3E");
+  /* 段落分隔：兩側淡出的細金線＋中間一個小圓點（10/1 拿掉原本中間像豎琴弦長的小線條） */
+  --orn: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='24' viewBox='0 0 240 24'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' x2='1'%3E%3Cstop offset='0' stop-color='%23C9A04E' stop-opacity='0'/%3E%3Cstop offset='.5' stop-color='%23C9A04E'/%3E%3Cstop offset='1' stop-color='%23C9A04E' stop-opacity='0'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath d='M0 12h112M128 12h112' stroke='url(%23g)' stroke-width='1'/%3E%3Ccircle cx='120' cy='12' r='2.2' fill='%23C9A04E'/%3E%3C/svg%3E");
 }
 
 /* ── 紙紋 ───────────────────────────── */
@@ -31,10 +29,11 @@ body { background-color: var(--ivory); background-image: var(--grain); }
 .divider-strings { height: 24px; background-color: transparent; }
 .sec-head.center h2::after { content: ""; display: block; width: 120px; height: 16px; margin: .5em auto 0; background: var(--orn) center / contain no-repeat; opacity: .7; }
 
-/* 頁尾頂端的一排弦 */
-.site-ft { position: relative; background-image: var(--grain-dk); }
-.site-ft::before { content: ""; position: absolute; top: 0; left: 50%; width: 240px; height: 40px; transform: translate(-50%, 0);
-  background: var(--strings-row) center / contain no-repeat; pointer-events: none; opacity: .9; }
+/* 頁尾頂端：Hope 註冊商標（10/1 起取代原本的一排弦） */
+.site-ft { position: relative; background-image: var(--grain-dk); padding-top: calc(18px + 65px + var(--s-7, 2.5rem)); } /* 頂端商標（83px）下方留白，內容不擠在商標下面 */
+.site-ft::before { content: ""; position: absolute; top: 18px; left: 50%; width: 92px; height: 65px; transform: translate(-50%, 0);
+  background-color: #E6C987; -webkit-mask: url(/img/brand/hope-trademark.png) center / contain no-repeat; mask: url(/img/brand/hope-trademark.png) center / contain no-repeat;
+  pointer-events: none; opacity: .85; }
 
 /* ── 段落節奏（手機收緊，全站一致；頁面 CSS 可覆寫） ── */
 @media (max-width: 599px) {
@@ -92,7 +91,7 @@ body:not(.hd-dark):has(#main > .dark:first-child) .site-hd:not(.scrolled) .nav a
 @media (max-width: 899px) {
   .ft-grid { grid-template-columns: 1fr 1fr; gap: var(--s-5) var(--s-4); }
   .ft-brand, .ft-contact { grid-column: 1 / -1; }
-  .site-ft { padding-top: var(--s-8); }
+  .site-ft { padding-top: calc(18px + 65px + var(--s-5)); } /* 頂端商標下方要留空間 */
   .ft-legal { margin-top: var(--s-6); }
 }
 

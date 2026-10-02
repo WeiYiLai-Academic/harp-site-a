@@ -97,7 +97,7 @@ p, li, dd, figcaption, .lead { text-wrap: pretty; }
 @media (max-width: 400px) {
   .hd-row { gap: var(--s-2); }
   .logo { gap: .4em; }
-  .logo-mark { width: 28px; height: 28px; }
+  .logo-mark { width: 44px; height: 31px; }
   .logo-txt b { font-size: 1.12rem; white-space: nowrap; }
   .logo-txt small { font-size: .66rem; letter-spacing: .38em; white-space: nowrap; }
   .hd-act { gap: 0; }

@@ -139,7 +139,8 @@ body.hd-dark .site-hd:not(.scrolled) { background: transparent; color: var(--on-
 body.hd-dark .site-hd:not(.scrolled) .hd-line { --bg: rgba(255,255,255,.1); border-color: rgba(255,255,255,.25); }
 .hd-row { height: 100%; display: flex; align-items: center; gap: var(--s-5); }
 .logo { display: inline-flex; align-items: center; gap: .55em; text-decoration: none; color: inherit; }
-.logo-mark { width: 34px; height: 34px; color: var(--gold); }
+.logo-mark { display: block; flex: none; width: 54px; height: 38px; color: var(--gold); background-color: currentColor;
+  -webkit-mask: url(/img/brand/hope-trademark.png) center / contain no-repeat; mask: url(/img/brand/hope-trademark.png) center / contain no-repeat; }
 .logo-txt { display: flex; flex-direction: column; line-height: 1.05; }
 .logo-txt b { font: 600 1.35rem/1 var(--f-latin); letter-spacing: .04em; }
 .logo-txt small { font-size: .72rem; letter-spacing: .5em; opacity: .75; margin-top: 3px; }
