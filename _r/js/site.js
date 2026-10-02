@@ -152,4 +152,54 @@
       try { localStorage.setItem(key, JSON.stringify([...closed, ann.dataset.announce].slice(-20))); } catch {}
     });
   }
+
+  // ── 詢問統計（10/2）：瀏覽、按 LINE／電話／Email／蝦皮、加入購物車、前往結帳 → 送到商店後台的 /api/hit ──
+  // 只送「哪一頁、哪個動作、從哪裡來」，不送任何個人資料；不用 cookie，「從哪裡來」只存在 sessionStorage（關掉分頁就沒了）。
+  // 只在正式站送（預覽站、本機、測試都不送）；爬蟲與自動化瀏覽器（Googlebot 會執行 JS）不送，免得把機器人算成客人。
+  const STAT = 'https://hopeharp-shop-production.up.railway.app/api/hit';
+  const ua = navigator.userAgent || '';
+  const live = /^(www\.)?taiwanharp\.org$/.test(location.hostname) && !navigator.webdriver
+    && !/bot|crawl|spider|slurp|headless|lighthouse|inspectiontool|preview/i.test(ua) && typeof navigator.sendBeacon === 'function';
+  const srcOf = () => {
+    const u = (new URLSearchParams(location.search).get('utm_source') || '').toLowerCase();
+    let h = '';
+    try { h = d.referrer ? new URL(d.referrer).hostname.replace(/^www\./, '') : ''; } catch {}
+    const t = u || h;
+    if (h === location.hostname.replace(/^www\./, '')) return null; // 站內換頁：沿用第一頁的來源
+    if (/chatgpt|openai|perplexity|gemini|copilot|claude/.test(t)) return 'ai';
+    if (/(^|\.)google\./.test(t) || t === 'google') return 'google';
+    if (/bing\.com$|^bing$/.test(t)) return 'bing';
+    if (/yahoo/.test(t)) return 'yahoo';
+    if (/facebook|^fb$|fb\.com$|fb\.me$/.test(t) || (!t && /FBAN|FBAV/.test(ua))) return 'facebook';
+    if (/instagram/.test(t) || (!t && /Instagram/.test(ua))) return 'instagram';
+    if (/youtube|youtu\.be/.test(t)) return 'youtube';
+    if (/(^|\.)line\.me$|^line$|lin\.ee/.test(t) || (!t && / Line\//.test(ua))) return 'line';
+    if (/vibeaico/.test(t)) return 'vibeaico';
+    if (/taiwan\.co\.im/.test(t)) return 'oldsite';
+    return t ? 'other' : 'direct';
+  };
+  // 重新整理、按上一頁時沒有 referrer（會被判成 direct）⇒ 只有「看得出來從哪個網站來」才蓋掉這次分頁記下的來源
+  const found = srcOf();
+  let src = found || 'direct';
+  try {
+    const kept = sessionStorage.getItem('hh_src');
+    if (kept && (!found || found === 'direct')) src = kept;
+    sessionStorage.setItem('hh_src', src);
+  } catch {}
+  const stat = (e) => {
+    if (!live) return;
+    try { navigator.sendBeacon(STAT, new Blob([JSON.stringify({ e, p: location.pathname, s: src })], { type: 'text/plain' })); } catch {}
+  };
+  window.HHStat = stat;
+  stat('view');
+  d.addEventListener('click', (e) => {
+    const a = e.target.closest && e.target.closest('a[href]');
+    if (!a) return;
+    const h = a.getAttribute('href') || '';
+    if (/^https?:\/\/(line\.me|lin\.ee)\//.test(h)) stat('line');
+    else if (/^tel:/.test(h)) stat('tel');
+    else if (/^mailto:/.test(h)) stat('mail');
+    else if (/^https?:\/\/([a-z.]*\.)?(shopee\.tw|shp\.ee)\//.test(h)) stat('shopee');
+  }, true);
+
 })();

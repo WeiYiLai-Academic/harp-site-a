@@ -163,11 +163,12 @@
     const c = read();
     const found = c.find((x) => sameLine(x, sku, color));
     if (!found && !p) { console.warn('[HHCart] 找不到商品：' + sku); return false; }
-    if (p && p.ok === false) { location.href = LINE; return false; }
+    if (p && p.ok === false) { if (window.HHStat) HHStat('line'); location.href = LINE; return false; }
     const max = maxOf(sku);
     if (found) found.qty = Math.min(max, clampQty(found.qty) + qty);
     else c.push({ ...itemFrom(sku, p), qty: Math.min(max, qty), ...(color ? { color } : {}), ...(color && opts.img ? { img: String(opts.img) } : {}) });
     write(c);
+    if (window.HHStat) HHStat('cart'); // 詢問統計（site.js）
     if (!(opts && opts.quiet)) toast((found ? found.name : p.n) + (color ? '・' + color : ''), sku);
     return true;
   }
@@ -427,7 +428,8 @@ body.hhc-lock{overflow:hidden}
   function checkout(btn) {
     if (!read().length) return;
     const fm = checkoutForm();
-    if (!fm) { location.href = LINE; return; }
+    if (!fm) { if (window.HHStat) HHStat('line'); location.href = LINE; return; }
+    if (window.HHStat) HHStat('checkout');
     btn.disabled = true; btn.textContent = '前往結帳頁…';
     d.body.appendChild(fm);
     fm.submit();
