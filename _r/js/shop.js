@@ -134,7 +134,7 @@
       <p class="eyebrow">${esc(CAT[p.cat][0])}</p>
       <h2 id="sheet-title">${keep(p.name)}</h2>
       <p class="sd-price"><span class="price"><small>NT$</small>${Number(p.price).toLocaleString('en-US')}</span>${p.listPrice ? `<s class="price-was">原價 ${ntd(p.listPrice)}</s>` : ''}</p>
-      <div class="sd-chips"><span class="chip chip-gold">${esc(p.shipLabel)}</span>${p.listPrice ? '<span class="chip chip-rose">限時優惠</span>' : ''}</div>
+      <div class="sd-chips"><span class="chip chip-gold">${esc(p.shipLabel)}</span>${p.listPrice ? `<span class="chip chip-rose">${esc(p.promo || '限時優惠')}</span>` : ''}</div>
       ${p.canBuy && colored(p) ? colorPicker(p) : ''}
       ${p.summary ? `<p class="sd-sum">${keep(p.summary)}</p>` : ''}
       ${blocks.join('')}
