@@ -128,6 +128,8 @@
 @media (min-width: 700px) { .art-body { font-size: 1.1875rem; } }
 .art-body > *:first-child { margin-top: 0; }
 .art-body p { margin: 0 0 1.15em; }
+.art-body .art-pointer { margin: 0 0 1.4em; padding: .8em 1.1em; background: var(--paper); border-left: 3px solid var(--gold); border-radius: 0 var(--r-sm) var(--r-sm) 0; font-size: var(--fs-sm); color: var(--text-2); }
+.art-body .art-pointer a { font-weight: 600; }
 .art-body h2 { font-size: clamp(1.45rem, 1.25rem + .9vw, 1.9rem); line-height: 1.45; margin: 2.3em 0 .8em; padding-top: .9em; position: relative; }
 .art-body h2::before { content: ""; position: absolute; top: 0; left: 0; width: 2.5rem; height: 2px; background: var(--gold); }
 .art-body h2:first-child { margin-top: 0; }
