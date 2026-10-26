@@ -99,6 +99,8 @@
   - [豎琴想賣掉怎麼辦？二手豎琴估價與代售](https://taiwanharp.org/knowledge/sell-used-harp/)
   - [小豎琴怎麼選？2026–2027 價格、弦數與推薦（8～27 弦）](https://taiwanharp.org/knowledge/small-harp-guide/)
   - [豎琴種類有哪些？踏板豎琴、撥鍵豎琴、小豎琴一次看懂](https://taiwanharp.org/knowledge/harp-types/)
+  - [豎琴譜怎麼看？小豎琴琴譜、手指編號與去哪裡買](https://taiwanharp.org/knowledge/harp-sheet-music/)
+  - [萊雅琴、里拉琴是什麼？跟小豎琴差在哪、怎麼選](https://taiwanharp.org/knowledge/lyre-harp/)
 - [豎琴公益演出](https://taiwanharp.org/performances/)：Hope Harp希望豎琴公益樂團演出資訊：2026/11/29 衡道堂「天使啟航・拾光・弦語」年末公益音樂會（門票已售完、全場 20 首節目單），以及 8/23「弦語童話」音樂會。
 - [弦語童話 — Hope Harp希望豎琴公益音樂會](https://taiwanharp.org/concert/)：Hope Harp希望豎琴公益樂團「弦語童話」宮崎駿 × 迪士尼豎琴公益音樂會：2026.08.23（日）下午 4:00–5:20，文化部 衡道堂。完整節目單、曲目介紹與演出者介紹。
 - [隱私權政策](https://taiwanharp.org/privacy/)：Hope Harp希望豎琴網站隱私權政策與個人資料使用說明：蒐集哪些資料、用在哪裡、怎麼保護、您的權利、Cookie 與分析工具，以及聯絡方式。
@@ -128,4 +130,4 @@
 
 - [llms-full.txt](https://taiwanharp.org/llms-full.txt)：每一頁的大綱、統一規格表、活動清單、常見問題與知識文章全文
 
-（本檔由網站建置程式從網頁內容產生，2026-10-19 更新；事實以網頁為準。）
+（本檔由網站建置程式從網頁內容產生，2026-10-26 更新；事實以網頁為準。）

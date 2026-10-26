@@ -257,7 +257,7 @@
   <url>
     <loc>https://taiwanharp.org/knowledge/</loc>
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://taiwanharp.org/knowledge/" />
-    <lastmod>2026-10-19</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <image:image>
       <image:loc>https://taiwanharp.org/img/DSCF6651-og-1200x630.jpg</image:loc>
     </image:image>
@@ -265,7 +265,7 @@
   <url>
     <loc>https://taiwanharp.org/knowledge/beginner-guide/</loc>
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://taiwanharp.org/knowledge/beginner-guide/" />
-    <lastmod>2026-10-19</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <image:image>
       <image:loc>https://taiwanharp.org/img/DSCF6651-og-1200x630.jpg</image:loc>
     </image:image>
@@ -289,7 +289,7 @@
   <url>
     <loc>https://taiwanharp.org/knowledge/harp-self-taught/</loc>
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://taiwanharp.org/knowledge/harp-self-taught/" />
-    <lastmod>2026-10-19</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <image:image>
       <image:loc>https://taiwanharp.org/img/harps/hope-harp-lineup-og.jpg</image:loc>
     </image:image>
@@ -361,7 +361,7 @@
   <url>
     <loc>https://taiwanharp.org/knowledge/kids-8-string-harp/</loc>
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://taiwanharp.org/knowledge/kids-8-string-harp/" />
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <image:image>
       <image:loc>https://taiwanharp.org/media/mary-lamb-8-string-harp-poster.jpg</image:loc>
     </image:image>
@@ -808,7 +808,7 @@
   <url>
     <loc>https://taiwanharp.org/knowledge/small-harp-guide/</loc>
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://taiwanharp.org/knowledge/small-harp-guide/" />
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <image:image>
       <image:loc>https://taiwanharp.org/img/DSCF6651-og-1200x630.jpg</image:loc>
     </image:image>
@@ -840,7 +840,47 @@
   <url>
     <loc>https://taiwanharp.org/knowledge/harp-types/</loc>
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://taiwanharp.org/knowledge/harp-types/" />
-    <lastmod>2026-10-19</lastmod>
+    <lastmod>2026-10-26</lastmod>
+    <image:image>
+      <image:loc>https://taiwanharp.org/img/DSCF6651-og-1200x630.jpg</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://taiwanharp.org/img/harps/hope-8s-w240.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://taiwanharp.org/img/harps/hope-15-w240.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://taiwanharp.org/img/harps/hope-17s-tiffany-green-w240.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://taiwanharp.org/img/harps/hope-17l-w240.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://taiwanharp.org/img/harps/hope-27s-sky-blue-w240.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://taiwanharp.org/img/harps/hope-34-pearl-white-w240.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://taiwanharp.org/img/harps/hope-36s-natural-maple-w240.webp</image:loc>
+    </image:image>
+    <image:image>
+      <image:loc>https://taiwanharp.org/img/harps/hope-38-iridescent-blue-violet-w240.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://taiwanharp.org/knowledge/harp-sheet-music/</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://taiwanharp.org/knowledge/harp-sheet-music/" />
+    <lastmod>2026-10-26</lastmod>
+    <image:image>
+      <image:loc>https://taiwanharp.org/img/DSCF6651-og-1200x630.jpg</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://taiwanharp.org/knowledge/lyre-harp/</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://taiwanharp.org/knowledge/lyre-harp/" />
+    <lastmod>2026-10-26</lastmod>
     <image:image>
       <image:loc>https://taiwanharp.org/img/DSCF6651-og-1200x630.jpg</image:loc>
     </image:image>
