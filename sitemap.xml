@@ -215,7 +215,7 @@
   <url>
     <loc>https://taiwanharp.org/courses/harp/</loc>
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://taiwanharp.org/courses/harp/" />
-    <lastmod>2026-10-19</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <image:image>
       <image:loc>https://taiwanharp.org/img/DSCF6651-og-1200x630.jpg</image:loc>
     </image:image>
@@ -257,7 +257,7 @@
   <url>
     <loc>https://taiwanharp.org/knowledge/</loc>
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://taiwanharp.org/knowledge/" />
-    <lastmod>2026-10-26</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <image:image>
       <image:loc>https://taiwanharp.org/img/DSCF6651-og-1200x630.jpg</image:loc>
     </image:image>
@@ -273,7 +273,7 @@
   <url>
     <loc>https://taiwanharp.org/knowledge/harp-teacher-taichung/</loc>
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://taiwanharp.org/knowledge/harp-teacher-taichung/" />
-    <lastmod>2026-10-14</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <image:image>
       <image:loc>https://taiwanharp.org/img/DSCF6651-og-1200x630.jpg</image:loc>
     </image:image>
@@ -281,7 +281,7 @@
   <url>
     <loc>https://taiwanharp.org/knowledge/adult-beginner-harp/</loc>
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://taiwanharp.org/knowledge/adult-beginner-harp/" />
-    <lastmod>2026-10-19</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <image:image>
       <image:loc>https://taiwanharp.org/img/harps/hope-harp-lineup-og.jpg</image:loc>
     </image:image>
@@ -569,7 +569,7 @@
   <url>
     <loc>https://taiwanharp.org/knowledge/harp-lesson-fee/</loc>
     <xhtml:link rel="alternate" hreflang="zh-TW" href="https://taiwanharp.org/knowledge/harp-lesson-fee/" />
-    <lastmod>2026-10-19</lastmod>
+    <lastmod>2026-11-18</lastmod>
     <image:image>
       <image:loc>https://taiwanharp.org/img/harps/hope-harp-lineup-og.jpg</image:loc>
     </image:image>
@@ -907,6 +907,14 @@
     </image:image>
     <image:image>
       <image:loc>https://taiwanharp.org/img/harps/hope-38-iridescent-blue-violet-w240.webp</image:loc>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://taiwanharp.org/knowledge/harp-trial-lesson/</loc>
+    <xhtml:link rel="alternate" hreflang="zh-TW" href="https://taiwanharp.org/knowledge/harp-trial-lesson/" />
+    <lastmod>2026-11-18</lastmod>
+    <image:image>
+      <image:loc>https://taiwanharp.org/img/DSCF6651-og-1200x630.jpg</image:loc>
     </image:image>
   </url>
 </urlset>
